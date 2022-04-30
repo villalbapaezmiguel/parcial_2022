@@ -1,0 +1,297 @@
+20:23:22 **** Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:23:26 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:23:30 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:26:47 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:29:26 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:30:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:31:11 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:34:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:36:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:51:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:53:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:5: warning: implicit declaration of function ‘utn_pedirChar’ [-Wimplicit-function-declaration]
+   22 |  if(utn_pedirChar(fecha, "\nIngrese fecha :", "\nERROR ",1, 51, 2)== 0)
+      |     ^~~~~~~~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:53:23 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:5: warning: implicit declaration of function ‘utn_pedirChar’ [-Wimplicit-function-declaration]
+   22 |  if(utn_pedirChar(&fecha, "\nIngrese fecha :", "\nERROR ",1, 51, 2)== 0)
+      |     ^~~~~~~~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:54:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:5: warning: implicit declaration of function ‘utn_pedirChar’ [-Wimplicit-function-declaration]
+   22 |  if(utn_pedirChar(fecha, "\nIngrese fecha :", "\nERROR ",1, 51, 2)== 0)
+      |     ^~~~~~~~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:55:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:55:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+21:03:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:32:5: warning: implicit declaration of function ‘strcnpy’; did you mean ‘strncpy’? [-Wimplicit-function-declaration]
+   32 |     strcnpy(fecha , dia , sizeof(fecha));
+      |     ^~~~~~~
+      |     strncpy
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+/usr/bin/ld: ./src/Parcial_1_Laboratorio.o: en la función `main':
+/home/miguel/Escritorio/Parcial_laboratorio /Parcial_1_Laboratorio/Debug/../src/Parcial_1_Laboratorio.c:32: referencia a `strcnpy' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [makefile:46: Parcial_1_Laboratorio] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:03:49 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:32:21: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   32 |     strncpy(fecha , dia , sizeof(fecha));
+      |                     ^~~
+      |                     |
+      |                     int
+In file included from ../src/Parcial_1_Laboratorio.c:13:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:05:37 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:32:21: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   32 |     strncpy(fecha , dia , 51);
+      |                     ^~~
+      |                     |
+      |                     int
+In file included from ../src/Parcial_1_Laboratorio.c:13:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:06:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:32:13: warning: passing argument 1 of ‘strncpy’ from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |     strncpy(&fecha , dia , 51);
+      |             ^~~~~~
+      |             |
+      |             char (*)[51]
+In file included from ../src/Parcial_1_Laboratorio.c:13:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char (*)[51]’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/Parcial_1_Laboratorio.c:32:22: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   32 |     strncpy(&fecha , dia , 51);
+      |                      ^~~
+      |                      |
+      |                      int
+In file included from ../src/Parcial_1_Laboratorio.c:13:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:07:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:32:21: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   32 |     strncpy(fecha , dia , 51);
+      |                     ^~~
+      |                     |
+      |                     int
+In file included from ../src/Parcial_1_Laboratorio.c:13:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 

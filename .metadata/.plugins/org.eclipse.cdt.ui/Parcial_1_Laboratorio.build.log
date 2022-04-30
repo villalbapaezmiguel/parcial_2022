@@ -1,0 +1,25 @@
+21:07:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:32:21: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   32 |     strncpy(fecha , dia , 51);
+      |                     ^~~
+      |                     |
+      |                     int
+In file included from ../src/Parcial_1_Laboratorio.c:13:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘int’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+
+21:07:05 Build Finished. 0 errors, 1 warnings. (took 515ms)
+

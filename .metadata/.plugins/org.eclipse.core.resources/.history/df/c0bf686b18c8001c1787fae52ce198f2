@@ -1,0 +1,30 @@
+/*
+ ============================================================================
+ Name        : Parcial_1_Laboratorio.c
+ Author      : 
+ Version     :
+ Copyright   : Your copyright notice
+ Description : Hello World in C, Ansi-style
+ ============================================================================
+ */
+
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+#include "utn.h"
+#include "Albumes.h"
+
+int main(void) {
+
+	char fecha[51];
+
+	if(utn_pedirChar(fecha, "\nIngrese fecha :", "\nERROR ",1, 51, 2)== 0)
+	{
+		printf("\nlisto :");
+		printf("%s",fecha);
+	}
+
+	return EXIT_SUCCESS;
+}
