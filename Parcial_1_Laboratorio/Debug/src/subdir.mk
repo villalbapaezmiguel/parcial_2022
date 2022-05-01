@@ -4,16 +4,19 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
+../src/Albumes.c \
 ../src/Menu.c \
 ../src/Parcial_1_Laboratorio.c \
 ../src/utn.c 
 
 OBJS += \
+./src/Albumes.o \
 ./src/Menu.o \
 ./src/Parcial_1_Laboratorio.o \
 ./src/utn.o 
 
 C_DEPS += \
+./src/Albumes.d \
 ./src/Menu.d \
 ./src/Parcial_1_Laboratorio.d \
 ./src/utn.d 

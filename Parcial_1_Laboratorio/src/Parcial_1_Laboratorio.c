@@ -18,28 +18,23 @@
 
 int main(void) {
 
-	char fecha[51];
 	int dia ;
 	int mes ;
 	int anio ;
 //tenemos que buscar la manera de pedir la fecha al usuario
-	if(utn_pedirInt(&dia, "\nIngrese dia :", "\nERROR ", 1, 30, 2) == 0)
+
+	int estado ;
+	estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+
+	if(estado == 0)
 	{
-		if(utn_pedirInt(&mes, "\nIngrese mes :", "\nERROR ", 1, 12, 2) == 0)
-		{
-			if(utn_pedirInt(&anio, "\nIngrese anio :", "\nERROR ", 1999,2022 , 2) == 0)
-			{
-				strncpy(fecha , dia , 51);
-				strncpy(fecha , "/", 51);
-			}
-		}
+		printf("\nsalio todo bien ");
+		printf("\n %d /%d / %d ", dia , mes , anio);
+	}else{
+		printf("\nF");
 	}
 
-	if(utn_pedirChar(fecha, "\nIngrese fecha :", "\nERROR ",1, 51, 2)== 0)
-	{
-		printf("\nlisto :");
-		printf("%s",fecha);
-	}
+
 
 	return EXIT_SUCCESS;
 }

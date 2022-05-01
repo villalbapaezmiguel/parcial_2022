@@ -16,6 +16,7 @@
 int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, char minimo , char maximo , int repeticiones);
 int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
 int utn_pedirFloat(float *pNumero , char *mensaje , char *mensajeError, float minimo , float maximo , int repeticiones);
-
+int esAlfaNumerico(char str[]);
+int utn_fecha(int* dia , int* mes , int* anio , char* mensaje , char* mensajeERROR , int repeticiones );
 
 #endif /* UTN_H_ */
