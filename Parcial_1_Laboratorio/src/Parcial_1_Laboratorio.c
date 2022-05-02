@@ -15,26 +15,14 @@
 #include <math.h>
 #include "utn.h"
 #include "Albumes.h"
-
+#define CANTIDAD 10
 int main(void) {
 
-	int dia ;
-	int mes ;
-	int anio ;
-//tenemos que buscar la manera de pedir la fecha al usuario
+	setbuf(stdout,NULL);
+	eAlbum album[CANTIDAD];
 
-	int estado ;
-	estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
-
-	if(estado == 0)
-	{
-		printf("\nsalio todo bien ");
-		printf("\n %d /%d / %d ", dia , mes , anio);
-	}else{
-		printf("\nF");
-	}
-
-
+	album[0] = {101, "Miguel",{10,12,2001}, 200};
+	menu(album , CANTIDAD);
 
 	return EXIT_SUCCESS;
 }

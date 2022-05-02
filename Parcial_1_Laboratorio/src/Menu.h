@@ -9,6 +9,7 @@
 #define MENU_H_
 
 #include "utn.h"
+#include "Albumes.h"
 
-
+void menu();
 #endif /* MENU_H_ */

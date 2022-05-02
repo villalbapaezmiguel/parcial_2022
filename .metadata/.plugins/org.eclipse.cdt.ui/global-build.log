@@ -790,3 +790,3396 @@ Invoking: GCC C Linker
 gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
 Finished building target: Parcial_1_Laboratorio
  
+17:18:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:160:10: warning: too many arguments for format [-Wformat-extra-args]
+  160 |   printf("\nIngrese dia : ", dia);
+      |          ^~~~~~~~~~~~~~~~~~
+../src/utn.c:161:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  161 |   scanf("%d", &dia);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:19:38 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:27:21: warning: passing argument 1 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                     ^~~~
+      |                     |
+      |                     int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:19: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |               ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:27: warning: passing argument 2 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                           ^~~~
+      |                           |
+      |                           int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:29: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                         ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:33: warning: passing argument 3 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                                 ^~~~~
+      |                                 |
+      |                                 int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:39: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                                   ~~~~^~~~
+../src/Parcial_1_Laboratorio.c:27:11: error: too many arguments to function ‘utn_fecha’
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |           ^~~~~~~~~
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:5: note: declared here
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |     ^~~~~~~~~
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:19:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:27:21: warning: passing argument 1 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                     ^~~~
+      |                     |
+      |                     int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:19: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |               ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:27: warning: passing argument 2 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                           ^~~~
+      |                           |
+      |                           int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:29: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                         ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:33: warning: passing argument 3 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                                 ^~~~~
+      |                                 |
+      |                                 int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:39: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                                   ~~~~^~~~
+../src/Parcial_1_Laboratorio.c:27:11: error: too many arguments to function ‘utn_fecha’
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |           ^~~~~~~~~
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:5: note: declared here
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |     ^~~~~~~~~
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:19:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:27:21: warning: passing argument 1 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                     ^~~~
+      |                     |
+      |                     int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:19: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |               ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:27: warning: passing argument 2 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                           ^~~~
+      |                           |
+      |                           int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:29: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                         ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:33: warning: passing argument 3 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |                                 ^~~~~
+      |                                 |
+      |                                 int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:39: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                                   ~~~~^~~~
+../src/Parcial_1_Laboratorio.c:27:11: error: too many arguments to function ‘utn_fecha’
+   27 |  estado = utn_fecha(&dia, &mes, &anio, "\nIngrese una fecha (dia/mes/ anio)", "\nERROR ", 2);
+      |           ^~~~~~~~~
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:5: note: declared here
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |     ^~~~~~~~~
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:20:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:29:4: warning: ‘estado’ is used uninitialized in this function [-Wuninitialized]
+   29 |  if(estado == 0)
+      |    ^
+../src/Parcial_1_Laboratorio.c:32:3: warning: ‘dia’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   32 |   printf("\n %d /%d / %d ", dia , mes , anio);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial_1_Laboratorio.c:32:3: warning: ‘mes’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+../src/Parcial_1_Laboratorio.c:32:3: warning: ‘anio’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:157:9: warning: comparison between pointer and integer
+  157 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |         ^~
+../src/utn.c:157:24: warning: comparison between pointer and integer
+  157 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |                        ^~
+../src/utn.c:157:40: warning: comparison between pointer and integer
+  157 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |                                        ^~
+../src/utn.c:160:10: warning: too many arguments for format [-Wformat-extra-args]
+  160 |   printf("\nIngrese dia : ", dia);
+      |          ^~~~~~~~~~~~~~~~~~
+../src/utn.c:161:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+  161 |   scanf("%d", dia);
+      |          ~^   ~~~
+      |           |   |
+      |           |   int
+      |           int *
+../src/utn.c:155:6: warning: unused variable ‘estado’ [-Wunused-variable]
+  155 |  int estado ;
+      |      ^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:20:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:23:6: warning: unused variable ‘anio’ [-Wunused-variable]
+   23 |  int anio ;
+      |      ^~~~
+../src/Parcial_1_Laboratorio.c:22:6: warning: unused variable ‘mes’ [-Wunused-variable]
+   22 |  int mes ;
+      |      ^~~
+../src/Parcial_1_Laboratorio.c:21:6: warning: unused variable ‘dia’ [-Wunused-variable]
+   21 |  int dia ;
+      |      ^~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:21:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:9: warning: comparison between pointer and integer
+  158 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |         ^~
+../src/utn.c:158:24: warning: comparison between pointer and integer
+  158 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |                        ^~
+../src/utn.c:158:40: warning: comparison between pointer and integer
+  158 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |                                        ^~
+../src/utn.c:161:10: warning: too many arguments for format [-Wformat-extra-args]
+  161 |   printf("\nIngrese dia : ", dia);
+      |          ^~~~~~~~~~~~~~~~~~
+../src/utn.c:162:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int’ [-Wformat=]
+  162 |   scanf("%d", dia);
+      |          ~^   ~~~
+      |           |   |
+      |           |   int
+      |           int *
+../src/utn.c:156:6: warning: unused variable ‘estado’ [-Wunused-variable]
+  156 |  int estado ;
+      |      ^~~~~~
+../src/utn.c:155:6: warning: variable ‘aux’ set but not used [-Wunused-but-set-variable]
+  155 |  int aux;
+      |      ^~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:21:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:9: warning: comparison between pointer and integer
+  158 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |         ^~
+../src/utn.c:158:24: warning: comparison between pointer and integer
+  158 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |                        ^~
+../src/utn.c:158:40: warning: comparison between pointer and integer
+  158 |  if(dia != NULL && mes != NULL && anio != NULL )
+      |                                        ^~
+../src/utn.c:161:10: warning: too many arguments for format [-Wformat-extra-args]
+  161 |   printf("\nIngrese dia : ", dia);
+      |          ^~~~~~~~~~~~~~~~~~
+../src/utn.c:156:6: warning: unused variable ‘estado’ [-Wunused-variable]
+  156 |  int estado ;
+      |      ^~~~~~
+../src/utn.c:155:6: warning: variable ‘aux’ set but not used [-Wunused-but-set-variable]
+  155 |  int aux;
+      |      ^~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:23:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:9: warning: too many arguments for format [-Wformat-extra-args]
+  158 |  printf("\nIngrese dia : ", dia);
+      |         ^~~~~~~~~~~~~~~~~~
+../src/utn.c:165:10: warning: too many arguments for format [-Wformat-extra-args]
+  165 |   printf("\nIngrese dia : ", mes);
+      |          ^~~~~~~~~~~~~~~~~~
+../src/utn.c:172:11: warning: too many arguments for format [-Wformat-extra-args]
+  172 |    printf("\nIngrese dia : ", anio);
+      |           ^~~~~~~~~~~~~~~~~~
+../src/utn.c:156:6: warning: unused variable ‘estado’ [-Wunused-variable]
+  156 |  int estado ;
+      |      ^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:24:48 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:26:51 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:27:8: warning: ‘dia’ is used uninitialized in this function [-Wuninitialized]
+   27 |  aux = utn_fecha(dia, mes, anio);
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Parcial_1_Laboratorio.c:27:8: warning: ‘mes’ is used uninitialized in this function [-Wuninitialized]
+../src/Parcial_1_Laboratorio.c:27:8: warning: ‘anio’ is used uninitialized in this function [-Wuninitialized]
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:27:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:27:18: warning: passing argument 1 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  aux = utn_fecha(&dia, &mes, &anio);
+      |                  ^~~~
+      |                  |
+      |                  int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:19: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |               ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:24: warning: passing argument 2 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  aux = utn_fecha(&dia, &mes, &anio);
+      |                        ^~~~
+      |                        |
+      |                        int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:29: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                         ~~~~^~~
+../src/Parcial_1_Laboratorio.c:27:30: warning: passing argument 3 of ‘utn_fecha’ makes integer from pointer without a cast [-Wint-conversion]
+   27 |  aux = utn_fecha(&dia, &mes, &anio);
+      |                              ^~~~~
+      |                              |
+      |                              int *
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:20:39: note: expected ‘int’ but argument is of type ‘int *’
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |                                   ~~~~^~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:27:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: At top level:
+../src/utn.c:152:5: error: conflicting types for ‘utn_fecha’
+  152 | int utn_fecha(int* dia , int* mes , int* anio )
+      |     ^~~~~~~~~
+In file included from ../src/utn.c:8:
+../src/utn.h:20:5: note: previous declaration of ‘utn_fecha’ was here
+   20 | int utn_fecha(int dia , int mes , int anio );
+      |     ^~~~~~~~~
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+make: *** [src/subdir.mk:29: src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:27:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:27:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:27:37 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:28:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:29:31 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:30:07 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:30:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:30:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pruenaInt’:
+../src/utn.c:142:12: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |            ^
+../src/utn.c:142:31: warning: comparison between pointer and integer
+  142 |  if(numero < maximo && numero > minimo)
+      |                               ^
+../src/utn.c: At top level:
+../src/utn.c:152:5: error: conflicting types for ‘utn_fecha’
+  152 | int utn_fecha(int dia , int mes , int anio )
+      |     ^~~~~~~~~
+In file included from ../src/utn.c:8:
+../src/utn.h:20:5: note: previous declaration of ‘utn_fecha’ was here
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |     ^~~~~~~~~
+make: *** [src/subdir.mk:29: src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:31:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c:152:5: error: conflicting types for ‘utn_fecha’
+  152 | int utn_fecha(int dia , int mes , int anio )
+      |     ^~~~~~~~~
+In file included from ../src/utn.c:8:
+../src/utn.h:20:5: note: previous declaration of ‘utn_fecha’ was here
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |     ^~~~~~~~~
+make: *** [src/subdir.mk:29: src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+17:31:38 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:31:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:32:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:32:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:32:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:34:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:34:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:158:10: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  158 |  scanf("%d", &dia);
+      |         ~^   ~~~~
+      |          |   |
+      |          |   int **
+      |          int *
+../src/utn.c:159:22: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  159 |  aux = utn_pruenaInt(&dia, 31, 1);
+      |                      ^~~~
+      |                      |
+      |                      int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:165:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  165 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:166:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  166 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:172:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  172 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:173:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  173 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:35:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:166:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  166 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:167:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  167 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:173:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  173 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:174:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  174 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:35:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:161:6: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  161 |  dia = auxDia ;
+      |      ^
+../src/utn.c:166:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  166 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:167:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  167 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:173:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  173 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:174:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  174 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:35:31 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_fecha’:
+../src/utn.c:166:11: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  166 |   scanf("%d", &mes);
+      |          ~^   ~~~~
+      |           |   |
+      |           |   int **
+      |           int *
+../src/utn.c:167:23: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  167 |   aux = utn_pruenaInt(&mes, 12, 1);
+      |                       ^~~~
+      |                       |
+      |                       int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+../src/utn.c:173:12: warning: format ‘%d’ expects argument of type ‘int *’, but argument 2 has type ‘int **’ [-Wformat=]
+  173 |    scanf("%d", &anio);
+      |           ~^   ~~~~~
+      |            |   |
+      |            |   int **
+      |            int *
+../src/utn.c:174:24: warning: passing argument 1 of ‘utn_pruenaInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  174 |    aux = utn_pruenaInt(&anio, 12, 1);
+      |                        ^~~~~
+      |                        |
+      |                        int **
+../src/utn.c:138:24: note: expected ‘int *’ but argument is of type ‘int **’
+  138 | int utn_pruenaInt(int* numero , int maximo , int minimo)
+      |                   ~~~~~^~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:36:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:36:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:37:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:37:30 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:37:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:38:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:38:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:43:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:43:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:46:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:46:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:46:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:46:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:47:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:47:06 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:47:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:48:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:51:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:55:16 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:15:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   15 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:08:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:59:19: error: unknown type name ‘Contratacion’
+   59 | int cont_imprimir(Contratacion* auxProducto);
+      |                   ^~~~~~~~~~~~
+../src/Albumes.h:60:27: error: unknown type name ‘Contratacion’
+   60 | int cont_inicializarArray(Contratacion* array,int limite);
+      |                           ^~~~~~~~~~~~
+../src/Albumes.h:61:20: error: unknown type name ‘Contratacion’
+   61 | int cont_altaArray(Contratacion* array,int limite, int indice, int* idContratacion, int idPantalla);
+      |                    ^~~~~~~~~~~~
+../src/Albumes.h:62:24: error: unknown type name ‘Contratacion’
+   62 | int cont_getEmptyIndex(Contratacion* array,int limite);
+      |                        ^~~~~~~~~~~~
+../src/Albumes.h:63:24: error: unknown type name ‘Contratacion’
+   63 | int cont_imprimirArray(Contratacion* array,int limite);
+      |                        ^~~~~~~~~~~~
+../src/Albumes.h:64:19: error: unknown type name ‘Contratacion’
+   64 | int cont_buscarId(Contratacion array[], int limite, int valorBuscado);
+      |                   ^~~~~~~~~~~~
+../src/Albumes.h:65:25: error: unknown type name ‘Contratacion’
+   65 | int cont_modificarArray(Contratacion* array,int limite, int indice);
+      |                         ^~~~~~~~~~~~
+../src/Albumes.h:66:20: error: unknown type name ‘Contratacion’
+   66 | int cont_bajaArray(Contratacion* array,int limite, int indice);
+      |                    ^~~~~~~~~~~~
+../src/Albumes.h:67:27: error: unknown type name ‘Contratacion’
+   67 | int cont_ordenarPorNombre(Contratacion* array,int limite);
+      |                           ^~~~~~~~~~~~
+../src/Albumes.c: In function ‘cont_imprimir’:
+../src/Albumes.c:20:5: error: ‘pElemento’ undeclared (first use in this function)
+   20 |  if(pElemento != NULL && pElemento->isEmpty == 0)
+      |     ^~~~~~~~~
+../src/Albumes.c:20:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Albumes.c: At top level:
+../src/Albumes.c:35:24: error: unknown type name ‘Contratacion’
+   35 | int cont_imprimirArray(Contratacion* array,int limite)
+      |                        ^~~~~~~~~~~~
+../src/Albumes.c:57:27: error: unknown type name ‘Contratacion’
+   57 | int cont_inicializarArray(Contratacion* array,int limite)
+      |                           ^~~~~~~~~~~~
+../src/Albumes.c:81:20: error: unknown type name ‘Contratacion’
+   81 | int cont_altaArray(Contratacion* array,int limite, int indice, int* idContratacion, int idPantalla)
+      |                    ^~~~~~~~~~~~
+../src/Albumes.c:112:27: error: unknown type name ‘Contratacion’
+  112 | int cont_altaForzadaArray(Contratacion* array,int limite, int indice, int* idContratacion, int idPantalla,char* archivo,char* cuit,int dias)
+      |                           ^~~~~~~~~~~~
+../src/Albumes.c:142:25: error: unknown type name ‘Contratacion’
+  142 | int cont_modificarArray(Contratacion* array,int limite, int indice)
+      |                         ^~~~~~~~~~~~
+../src/Albumes.c:166:20: error: unknown type name ‘Contratacion’
+  166 | int cont_bajaArray(Contratacion* array,int limite, int indice)
+      |                    ^~~~~~~~~~~~
+../src/Albumes.c:185:19: error: unknown type name ‘Contratacion’
+  185 | int cont_buscarId(Contratacion array[], int limite, int valorBuscado)
+      |                   ^~~~~~~~~~~~
+../src/Albumes.c:210:24: error: unknown type name ‘Contratacion’
+  210 | int cont_getEmptyIndex(Contratacion* array,int limite)
+      |                        ^~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:10:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:59:19: error: unknown type name ‘Contratacion’
+   59 | int cont_imprimir(Contratacion* auxProducto);
+      |                   ^~~~~~~~~~~~
+../src/Albumes.h:60:27: error: unknown type name ‘Contratacion’
+   60 | int cont_inicializarArray(Contratacion* array,int limite);
+      |                           ^~~~~~~~~~~~
+../src/Albumes.h:61:20: error: unknown type name ‘Contratacion’
+   61 | int cont_altaArray(Contratacion* array,int limite, int indice, int* idContratacion, int idPantalla);
+      |                    ^~~~~~~~~~~~
+../src/Albumes.h:62:24: error: unknown type name ‘Contratacion’
+   62 | int cont_getEmptyIndex(Contratacion* array,int limite);
+      |                        ^~~~~~~~~~~~
+../src/Albumes.h:63:24: error: unknown type name ‘Contratacion’
+   63 | int cont_imprimirArray(Contratacion* array,int limite);
+      |                        ^~~~~~~~~~~~
+../src/Albumes.h:64:19: error: unknown type name ‘Contratacion’
+   64 | int cont_buscarId(Contratacion array[], int limite, int valorBuscado);
+      |                   ^~~~~~~~~~~~
+../src/Albumes.h:65:25: error: unknown type name ‘Contratacion’
+   65 | int cont_modificarArray(Contratacion* array,int limite, int indice);
+      |                         ^~~~~~~~~~~~
+../src/Albumes.h:66:20: error: unknown type name ‘Contratacion’
+   66 | int cont_bajaArray(Contratacion* array,int limite, int indice);
+      |                    ^~~~~~~~~~~~
+../src/Albumes.h:67:27: error: unknown type name ‘Contratacion’
+   67 | int cont_ordenarPorNombre(Contratacion* array,int limite);
+      |                           ^~~~~~~~~~~~
+../src/Albumes.c: In function ‘cont_imprimir’:
+../src/Albumes.c:20:5: error: ‘pElemento’ undeclared (first use in this function)
+   20 |  if(pElemento != NULL && pElemento->isEmpty == 0)
+      |     ^~~~~~~~~
+../src/Albumes.c:20:5: note: each undeclared identifier is reported only once for each function it appears in
+../src/Albumes.c: At top level:
+../src/Albumes.c:35:24: error: unknown type name ‘Contratacion’
+   35 | int cont_imprimirArray(Contratacion* array,int limite)
+      |                        ^~~~~~~~~~~~
+../src/Albumes.c:57:27: error: unknown type name ‘Contratacion’
+   57 | int cont_inicializarArray(Contratacion* array,int limite)
+      |                           ^~~~~~~~~~~~
+../src/Albumes.c:81:20: error: unknown type name ‘Contratacion’
+   81 | int cont_altaArray(Contratacion* array,int limite, int indice, int* idContratacion, int idPantalla)
+      |                    ^~~~~~~~~~~~
+../src/Albumes.c:112:27: error: unknown type name ‘Contratacion’
+  112 | int cont_altaForzadaArray(Contratacion* array,int limite, int indice, int* idContratacion, int idPantalla,char* archivo,char* cuit,int dias)
+      |                           ^~~~~~~~~~~~
+../src/Albumes.c:142:25: error: unknown type name ‘Contratacion’
+  142 | int cont_modificarArray(Contratacion* array,int limite, int indice)
+      |                         ^~~~~~~~~~~~
+../src/Albumes.c:166:20: error: unknown type name ‘Contratacion’
+  166 | int cont_bajaArray(Contratacion* array,int limite, int indice)
+      |                    ^~~~~~~~~~~~
+../src/Albumes.c:185:19: error: unknown type name ‘Contratacion’
+  185 | int cont_buscarId(Contratacion array[], int limite, int valorBuscado)
+      |                   ^~~~~~~~~~~~
+../src/Albumes.c:210:24: error: unknown type name ‘Contratacion’
+  210 | int cont_getEmptyIndex(Contratacion* array,int limite)
+      |                        ^~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:19:23 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘buscarLugarLibre’:
+../src/Albumes.c:15:9: error: expected expression before ‘=’ token
+   15 |   for ( = 0;  < max; ++) {
+      |         ^
+../src/Albumes.c:15:24: error: expected expression before ‘)’ token
+   15 |   for ( = 0;  < max; ++) {
+      |                        ^
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:20:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:15:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   15 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:30:09 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c:10:11: error: unknown type name ‘eGenero’
+   10 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum)
+      |           ^~~~~~~
+../src/Menu.c:10:44: error: unknown type name ‘eArtista’
+   10 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum)
+      |                                            ^~~~~~~~
+../src/Menu.c:10:80: error: unknown type name ‘eTipoArtista’
+   10 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum)
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.c:10:127: error: unknown type name ‘eAlbum’
+   10 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum)
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Menu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:30:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:13:11: error: unknown type name ‘eGenero’
+   13 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:13:44: error: unknown type name ‘eArtista’
+   13 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:13:80: error: unknown type name ‘eTipoArtista’
+   13 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:13:127: error: unknown type name ‘eAlbum’
+   13 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:30:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:31:10 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:34:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:36:07 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:36:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:37:10 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:38:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:39:49 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero eGenero ,int tamGenero, eArtista eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:43: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero eGenero ,int tamGenero, eArtista eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                           ^~~~~~~~
+../src/Menu.h:14:78: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero eGenero ,int tamGenero, eArtista eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                              ^~~~~~~~~~~~
+../src/Menu.h:14:125: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero eGenero ,int tamGenero, eArtista eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                             ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:21: error: expected ‘)’ before ‘int’
+   14 | void menu(eGenero  ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                     ^~~
+      |                     )
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:14 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:21: error: expected ‘)’ before ‘int’
+   14 | void menu(eGenero  ,int tamGenero, eArtista  ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                     ^~~
+      |                     )
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:40:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:41:07 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:41:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:42:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+In file included from ../src/Albumes.h:17,
+                 from ../src/Albumes.c:8:
+../src/Menu.h:14:11: error: unknown type name ‘eGenero’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |           ^~~~~~~
+../src/Menu.h:14:44: error: unknown type name ‘eArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                            ^~~~~~~~
+../src/Menu.h:14:80: error: unknown type name ‘eTipoArtista’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                ^~~~~~~~~~~~
+../src/Menu.h:14:127: error: unknown type name ‘eAlbum’
+   14 | void menu(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:42:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:15:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   15 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:09:16 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:15:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   15 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:13:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:15:101: error: expected ‘;’ before ‘do’
+   15 |  inicilizar(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum)
+      |                                                                                                     ^
+      |                                                                                                     ;
+   16 | 
+   17 |  do {
+      |  ~~                                                                                                  
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:12:6: warning: unused variable ‘opciones’ [-Wunused-variable]
+   12 |  int opciones ;
+      |      ^~~~~~~~
+make: *** [src/subdir.mk:29: src/Menu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:13:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:18:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   18 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:14:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:18:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   18 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:27:40 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:47:5: error: conflicting types for ‘buscarLugarLibre’
+   47 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c:10:5: note: previous definition of ‘buscarLugarLibre’ was here
+   10 | int buscarLugarLibre (eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum)
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:28:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:10:5: error: conflicting types for ‘buscarLugarLibre’
+   10 | int buscarLugarLibre (eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum)
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:62:5: note: previous declaration of ‘buscarLugarLibre’ was here
+   62 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre);
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:29:49 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:20:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   20 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:31:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:20:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   20 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:13:29 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:106:29: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  106 |          strncpy(eGenero[id].descripcion , auxDescripcionGenero, 51);
+      |                  ~~~~~~~~~~~^~~~~~~~~~~~
+      |                             |
+      |                             char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/Albumes.c:87:6: warning: unused variable ‘auxImporteAlbum’ [-Wunused-variable]
+   87 |  int auxImporteAlbum ;
+      |      ^~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:122:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  122 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:20:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   20 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:15:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:30: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |           strncpy(eGenero[id].descripcion , auxDescripcionGenero, 51);
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~
+      |                              |
+      |                              char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:125:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  125 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:21:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:30: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |           strncpy(eGenero[id].descripcion , &auxDescripcionGenero, 51);
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~
+      |                              |
+      |                              char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/Albumes.c:109:45: warning: passing argument 2 of ‘strncpy’ from incompatible pointer type [-Wincompatible-pointer-types]
+  109 |           strncpy(eGenero[id].descripcion , &auxDescripcionGenero, 51);
+      |                                             ^~~~~~~~~~~~~~~~~~~~~
+      |                                             |
+      |                                             char (*)[51]
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘char (*)[51]’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:125:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  125 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:22:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:30: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |           strncpy(eGenero[id].descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~
+      |                              |
+      |                              char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:125:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  125 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:43:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:30: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |           strncpy(eGenero[id].descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~
+      |                              |
+      |                              char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:125:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  125 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:45:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:30: error: invalid type argument of ‘->’ (have ‘eGenero’ {aka ‘struct <anonymous>’})
+  109 |           strncpy(eGenero[id]->descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                              ^~
+At top level:
+../src/Albumes.c:125:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  125 | static int nuevoId(void)
+      |            ^~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:46:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:31: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |           strncpy( eGenero[id].descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~
+      |                               |
+      |                               char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:125:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  125 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:50:23 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:109:31: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  109 |           strncpy( eGenero[id].descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~
+      |                               |
+      |                               char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:129:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  129 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:54:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:110:31: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  110 |           strncpy( eGenero[id].descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~
+      |                               |
+      |                               char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+At top level:
+../src/Albumes.c:138:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  138 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:58:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:113:31: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |           strncpy( eGenero[id].descripcion , auxDescripcionGenero, sizeof(eGenero[id].descripcion));
+      |                    ~~~~~~~~~~~^~~~~~~~~~~~
+      |                               |
+      |                               char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:59:37 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:113:67: warning: implicit declaration of function ‘sizeod’ [-Wimplicit-function-declaration]
+  113 |           strncpy(eGenero[id].descripcion, auxDescripcionGenero , sizeod(eGenero[id].descripcion));
+      |                                                                   ^~~~~~
+../src/Albumes.c:113:30: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |           strncpy(eGenero[id].descripcion, auxDescripcionGenero , sizeod(eGenero[id].descripcion));
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~
+      |                              |
+      |                              char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+/usr/bin/ld: ./src/Albumes.o: en la función `alta':
+/home/miguel/Escritorio/Parcial_laboratorio /Parcial_1_Laboratorio/Debug/../src/Albumes.c:113: referencia a `sizeod' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [makefile:46: Parcial_1_Laboratorio] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:59:47 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:113:30: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |           strncpy(eGenero[id].descripcion, auxDescripcionGenero , sizeof(eGenero[id].descripcion));
+      |                   ~~~~~~~~~~~^~~~~~~~~~~~
+      |                              |
+      |                              char
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:59:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:00:38 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:20:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   20 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:01:41 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Menu.c:20:3: warning: ‘opciones’ is used uninitialized in this function [-Wuninitialized]
+   20 |   switch(opciones)
+      |   ^~~~~~
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:08:40 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:13:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+   13 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:10:27 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:10:30 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:36:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:93:12: error: expected ‘)’ before ‘!=’ token
+   93 |  if((eAlbum != NULL && tamAlbum > 0))
+      |     ~      ^~~
+      |            )
+../src/Albumes.c:93:37: error: expected expression before ‘)’ token
+   93 |  if((eAlbum != NULL && tamAlbum > 0))
+      |                                     ^
+../src/Albumes.c:105:15: error: expected expression before ‘eAlbum’
+  105 |       strncpy(eAlbum[id].titulo , auxTituloAlbum , sizeof(eAlbum[id].titulo));
+      |               ^~~~~~
+../src/Albumes.c:105:7: error: too few arguments to function ‘strncpy’
+  105 |       strncpy(eAlbum[id].titulo , auxTituloAlbum , sizeof(eAlbum[id].titulo));
+      |       ^~~~~~~
+In file included from ../src/utn.h:12,
+                 from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+/usr/include/string.h:125:14: note: declared here
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/Albumes.c:106:13: error: expected identifier or ‘(’ before ‘[’ token
+  106 |       eAlbum[id].codigoAlbum = nuevoIdAlbum();
+      |             ^
+../src/Albumes.c:107:13: error: expected identifier or ‘(’ before ‘[’ token
+  107 |       eAlbum[id].fecha.dia = auxDiaAlbum;
+      |             ^
+../src/Albumes.c:108:13: error: expected identifier or ‘(’ before ‘[’ token
+  108 |       eAlbum[id].fecha.mes = auxMesAlbum;
+      |             ^
+../src/Albumes.c:109:13: error: expected identifier or ‘(’ before ‘[’ token
+  109 |       eAlbum[id].fecha.anio = auxAnioAlbum;
+      |             ^
+../src/Albumes.c:110:13: error: expected identifier or ‘(’ before ‘[’ token
+  110 |       eAlbum[id].importe = auxImporteAlbum;
+      |             ^
+../src/Albumes.c:85:6: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   85 |  int auxTipoArtista ;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:84:7: warning: unused variable ‘auxDescripcionTipoArtista’ [-Wunused-variable]
+   84 |  char auxDescripcionTipoArtista[51];
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:82:7: warning: unused variable ‘auxNombreArtista’ [-Wunused-variable]
+   82 |  char auxNombreArtista [51];
+      |       ^~~~~~~~~~~~~~~~
+../src/Albumes.c:80:6: warning: unused variable ‘auxCodigoGenero’ [-Wunused-variable]
+   80 |  int auxCodigoGenero ;
+      |      ^~~~~~~~~~~~~~~
+../src/Albumes.c:79:7: warning: unused variable ‘auxDescripcionGenero’ [-Wunused-variable]
+   79 |  char auxDescripcionGenero[51];
+      |       ^~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:144:12: warning: ‘nuevoIdAlbum’ defined but not used [-Wunused-function]
+  144 | static int nuevoIdAlbum(void)
+      |            ^~~~~~~~~~~~
+../src/Albumes.c:137:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  137 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:130:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  130 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:123:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  123 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:24 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:75:5: error: conflicting types for ‘alta’
+   75 | int alta(eAlbum* eAlbum , int temAlbum , int id)
+      |     ^~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:63:5: note: previous declaration of ‘alta’ was here
+   63 | int alta(eGenero* eGenero ,int tamGenero, int id);
+      |     ^~~~
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:93:24: error: ‘tamAlbum’ undeclared (first use in this function); did you mean ‘temAlbum’?
+   93 |  if((eAlbum != NULL && tamAlbum > 0))
+      |                        ^~~~~~~~
+      |                        temAlbum
+../src/Albumes.c:93:24: note: each undeclared identifier is reported only once for each function it appears in
+../src/Albumes.c:85:6: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   85 |  int auxTipoArtista ;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:84:7: warning: unused variable ‘auxDescripcionTipoArtista’ [-Wunused-variable]
+   84 |  char auxDescripcionTipoArtista[51];
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:82:7: warning: unused variable ‘auxNombreArtista’ [-Wunused-variable]
+   82 |  char auxNombreArtista [51];
+      |       ^~~~~~~~~~~~~~~~
+../src/Albumes.c:80:6: warning: unused variable ‘auxCodigoGenero’ [-Wunused-variable]
+   80 |  int auxCodigoGenero ;
+      |      ^~~~~~~~~~~~~~~
+../src/Albumes.c:79:7: warning: unused variable ‘auxDescripcionGenero’ [-Wunused-variable]
+   79 |  char auxDescripcionGenero[51];
+      |       ^~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:137:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  137 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:130:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  130 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:123:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  123 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:37 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:75:5: error: conflicting types for ‘alta’
+   75 | int alta(eAlbum* eAlbum , int tamAlbum , int id)
+      |     ^~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:63:5: note: previous declaration of ‘alta’ was here
+   63 | int alta(eGenero* eGenero ,int tamGenero, int id);
+      |     ^~~~
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:85:6: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   85 |  int auxTipoArtista ;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:84:7: warning: unused variable ‘auxDescripcionTipoArtista’ [-Wunused-variable]
+   84 |  char auxDescripcionTipoArtista[51];
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:82:7: warning: unused variable ‘auxNombreArtista’ [-Wunused-variable]
+   82 |  char auxNombreArtista [51];
+      |       ^~~~~~~~~~~~~~~~
+../src/Albumes.c:80:6: warning: unused variable ‘auxCodigoGenero’ [-Wunused-variable]
+   80 |  int auxCodigoGenero ;
+      |      ^~~~~~~~~~~~~~~
+../src/Albumes.c:79:7: warning: unused variable ‘auxDescripcionGenero’ [-Wunused-variable]
+   79 |  char auxDescripcionGenero[51];
+      |       ^~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:137:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  137 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:130:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  130 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:123:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  123 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:37:57 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:85:6: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   85 |  int auxTipoArtista ;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:84:7: warning: unused variable ‘auxDescripcionTipoArtista’ [-Wunused-variable]
+   84 |  char auxDescripcionTipoArtista[51];
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:82:7: warning: unused variable ‘auxNombreArtista’ [-Wunused-variable]
+   82 |  char auxNombreArtista [51];
+      |       ^~~~~~~~~~~~~~~~
+../src/Albumes.c:80:6: warning: unused variable ‘auxCodigoGenero’ [-Wunused-variable]
+   80 |  int auxCodigoGenero ;
+      |      ^~~~~~~~~~~~~~~
+../src/Albumes.c:79:7: warning: unused variable ‘auxDescripcionGenero’ [-Wunused-variable]
+   79 |  char auxDescripcionGenero[51];
+      |       ^~~~~~~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:137:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  137 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:130:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  130 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:123:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  123 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:29:14: warning: passing argument 1 of ‘alta’ from incompatible pointer type [-Wincompatible-pointer-types]
+   29 |      if(alta(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum, auxLugarLibre) == 1)
+      |              ^~~~~~
+      |              |
+      |              eGenero * {aka struct <anonymous> *}
+In file included from ../src/Menu.h:12,
+                 from ../src/Menu.c:8:
+../src/Albumes.h:63:18: note: expected ‘eAlbum *’ {aka ‘struct <anonymous> *’} but argument is of type ‘eGenero *’ {aka ‘struct <anonymous> *’}
+   63 | int alta(eAlbum* eAlbum , int tamAlbum , int id);
+      |          ~~~~~~~~^~~~~~
+../src/Menu.c:29:33: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+   29 |      if(alta(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum, auxLugarLibre) == 1)
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 eArtista * {aka struct <anonymous> *}
+In file included from ../src/Menu.h:12,
+                 from ../src/Menu.c:8:
+../src/Albumes.h:63:46: note: expected ‘int’ but argument is of type ‘eArtista *’ {aka ‘struct <anonymous> *’}
+   63 | int alta(eAlbum* eAlbum , int tamAlbum , int id);
+      |                                          ~~~~^~
+../src/Menu.c:29:9: error: too many arguments to function ‘alta’
+   29 |      if(alta(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum, auxLugarLibre) == 1)
+      |         ^~~~
+In file included from ../src/Menu.h:12,
+                 from ../src/Menu.c:8:
+../src/Albumes.h:63:5: note: declared here
+   63 | int alta(eAlbum* eAlbum , int tamAlbum , int id);
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Menu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:38:06 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:131:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  131 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:124:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  124 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:117:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  117 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:29:14: warning: passing argument 1 of ‘alta’ from incompatible pointer type [-Wincompatible-pointer-types]
+   29 |      if(alta(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum, auxLugarLibre) == 1)
+      |              ^~~~~~
+      |              |
+      |              eGenero * {aka struct <anonymous> *}
+In file included from ../src/Menu.h:12,
+                 from ../src/Menu.c:8:
+../src/Albumes.h:63:18: note: expected ‘eAlbum *’ {aka ‘struct <anonymous> *’} but argument is of type ‘eGenero *’ {aka ‘struct <anonymous> *’}
+   63 | int alta(eAlbum* eAlbum , int tamAlbum , int id);
+      |          ~~~~~~~~^~~~~~
+../src/Menu.c:29:33: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+   29 |      if(alta(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum, auxLugarLibre) == 1)
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 eArtista * {aka struct <anonymous> *}
+In file included from ../src/Menu.h:12,
+                 from ../src/Menu.c:8:
+../src/Albumes.h:63:46: note: expected ‘int’ but argument is of type ‘eArtista *’ {aka ‘struct <anonymous> *’}
+   63 | int alta(eAlbum* eAlbum , int tamAlbum , int id);
+      |                                          ~~~~^~
+../src/Menu.c:29:9: error: too many arguments to function ‘alta’
+   29 |      if(alta(genero, tamGenero, eArtista, tamArtista, eTipoArtista, tamTipoArtista, eAlbum, tamAlbum, auxLugarLibre) == 1)
+      |         ^~~~
+In file included from ../src/Menu.h:12,
+                 from ../src/Menu.c:8:
+../src/Albumes.h:63:5: note: declared here
+   63 | int alta(eAlbum* eAlbum , int tamAlbum , int id);
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Menu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:38:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:40:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:35:5: error: conflicting types for ‘inicilizar’
+   35 | int inicilizar(eAlbum* eAlbum,int tamAlbum)
+      |     ^~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:61:5: note: previous declaration of ‘inicilizar’ was here
+   61 | int inicilizar(eGenero* eGenero ,int tamGenero, eArtista* eArtista ,int tamArtista, eTipoArtista* eTipoArtista ,int tamTipoArtista,eAlbum* eAlbum,int tamAlbum);
+      |     ^~~~~~~~~~
+../src/Albumes.c:131:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  131 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:124:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  124 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:117:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  117 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:41:00 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:131:12: warning: ‘nuevoIdArtista’ defined but not used [-Wunused-function]
+  131 | static int nuevoIdArtista(void)
+      |            ^~~~~~~~~~~~~~
+../src/Albumes.c:124:12: warning: ‘nuevoIdTipoArtista’ defined but not used [-Wunused-function]
+  124 | static int nuevoIdTipoArtista(void)
+      |            ^~~~~~~~~~~~~~~~~~
+../src/Albumes.c:117:12: warning: ‘nuevoIdGenero’ defined but not used [-Wunused-function]
+  117 | static int nuevoIdGenero(void)
+      |            ^~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:41:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:98:32: warning: implicit declaration of function ‘nuevoIdAlbum’ [-Wimplicit-function-declaration]
+   98 |       eAlbum[id].codigoAlbum = nuevoIdAlbum();
+      |                                ^~~~~~~~~~~~
+At top level:
+../src/Albumes.c:115:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  115 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+/usr/bin/ld: ./src/Albumes.o: en la función `alta':
+/home/miguel/Escritorio/Parcial_laboratorio /Parcial_1_Laboratorio/Debug/../src/Albumes.c:98: referencia a `nuevoIdAlbum' sin definir
+collect2: error: ld returned 1 exit status
+make: *** [makefile:46: Parcial_1_Laboratorio] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:42:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:44:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:44:57 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:48:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:49:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:49:42 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:49:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:50:16 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:50:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:51:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:51:06 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:58:20 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:58:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:59:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:34:13: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   34 |     strncpy(*pLetra , bufferChar , sizeof(pLetra));
+      |             ^~~~~~~
+      |             |
+      |             char
+In file included from ../src/utn.h:12,
+                 from ../src/utn.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/utn.c:34:23: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   34 |     strncpy(*pLetra , bufferChar , sizeof(pLetra));
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       char
+In file included from ../src/utn.h:12,
+                 from ../src/utn.c:8:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:59:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:34:13: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   34 |     strncpy(*pLetra , bufferChar , sizeof(*pLetra));
+      |             ^~~~~~~
+      |             |
+      |             char
+In file included from ../src/utn.h:12,
+                 from ../src/utn.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/utn.c:34:23: warning: passing argument 2 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   34 |     strncpy(*pLetra , bufferChar , sizeof(*pLetra));
+      |                       ^~~~~~~~~~
+      |                       |
+      |                       char
+In file included from ../src/utn.h:12,
+                 from ../src/utn.c:8:
+/usr/include/string.h:125:14: note: expected ‘const char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:00:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:30:12: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[4030]’ [-Wformat=]
+   30 |    scanf("%c",&bufferChar);
+      |           ~^  ~~~~~~~~~~~
+      |            |  |
+      |            |  char (*)[4030]
+      |            char *
+../src/utn.c:34:13: warning: passing argument 1 of ‘strncpy’ makes pointer from integer without a cast [-Wint-conversion]
+   34 |     strncpy(*pLetra , bufferChar , sizeof(*pLetra));
+      |             ^~~~~~~
+      |             |
+      |             char
+In file included from ../src/utn.h:12,
+                 from ../src/utn.c:8:
+/usr/include/string.h:125:14: note: expected ‘char * restrict’ but argument is of type ‘char’
+  125 | extern char *strncpy (char *__restrict __dest,
+      |              ^~~~~~~
+../src/utn.c:35:13: warning: assignment to ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   35 |     *pLetra = bufferChar;
+      |             ^
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:00:44 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:30:12: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[4030]’ [-Wformat=]
+   30 |    scanf("%c",&bufferChar);
+      |           ~^  ~~~~~~~~~~~
+      |            |  |
+      |            |  char (*)[4030]
+      |            char *
+../src/utn.c:35:13: warning: assignment to ‘char’ from ‘char *’ makes integer from pointer without a cast [-Wint-conversion]
+   35 |     *pLetra = bufferChar;
+      |             ^
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:00:51 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:30:12: warning: format ‘%c’ expects argument of type ‘char *’, but argument 2 has type ‘char (*)[4030]’ [-Wformat=]
+   30 |    scanf("%c",&bufferChar);
+      |           ~^  ~~~~~~~~~~~
+      |            |  |
+      |            |  char (*)[4030]
+      |            char *
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:00:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:01:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:08:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c:19:5: error: conflicting types for ‘utn_pedirChar’
+   19 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones)
+      |     ^~~~~~~~~~~~~
+In file included from ../src/utn.c:8:
+../src/utn.h:16:5: note: previous declaration of ‘utn_pedirChar’ was here
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, char minimo , char maximo , int repeticiones);
+      |     ^~~~~~~~~~~~~
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:26:67: error: ‘minimo’ undeclared (first use in this function)
+   26 |   if(pLetra != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && repeticiones >= 0)
+      |                                                                   ^~~~~~
+../src/utn.c:26:67: note: each undeclared identifier is reported only once for each function it appears in
+../src/utn.c:26:77: error: ‘maximo’ undeclared (first use in this function)
+   26 |   if(pLetra != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && repeticiones >= 0)
+      |                                                                             ^~~~~~
+../src/utn.c:33:5: error: ‘retorno’ undeclared (first use in this function)
+   33 |     retorno = 0;
+      |     ^~~~~~~
+../src/utn.c:21:7: warning: unused variable ‘bufferChar’ [-Wunused-variable]
+   21 |  char bufferChar [4030];
+      |       ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:09:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c:19:5: error: conflicting types for ‘utn_pedirChar’
+   19 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones)
+      |     ^~~~~~~~~~~~~
+In file included from ../src/utn.c:8:
+../src/utn.h:16:5: note: previous declaration of ‘utn_pedirChar’ was here
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, char minimo , char maximo , int repeticiones);
+      |     ^~~~~~~~~~~~~
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:21:7: warning: unused variable ‘bufferChar’ [-Wunused-variable]
+   21 |  char bufferChar [4030];
+      |       ^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/utn.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:09:40 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:88:7: error: too many arguments to function ‘utn_pedirChar’
+   88 |    if(utn_pedirChar(auxTituloAlbum, "\nIngrese el nombre del Titulo :", "\nERROR ", 1, 51, 2) == 0)
+      |       ^~~~~~~~~~~~~
+In file included from ../src/Albumes.h:16,
+                 from ../src/Albumes.c:8:
+../src/utn.h:16:5: note: declared here
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones);
+      |     ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:10:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:26:11: error: too many arguments to function ‘utn_pedirChar’
+   26 |  estado = utn_pedirChar(letra, "\nIngrese algo :","\nERROR ", 1, 51, 2);
+      |           ^~~~~~~~~~~~~
+In file included from ../src/Parcial_1_Laboratorio.c:16:
+../src/utn.h:16:5: note: declared here
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones);
+      |     ^~~~~~~~~~~~~
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:10:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:22:9: warning: unused variable ‘album’ [-Wunused-variable]
+   22 |  eAlbum album[CANTIDAD];
+      |         ^~~~~
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+../src/utn.c: In function ‘utn_pedirChar’:
+../src/utn.c:21:7: warning: unused variable ‘bufferChar’ [-Wunused-variable]
+   21 |  char bufferChar [4030];
+      |       ^~~~~~~~~~
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:10:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:10:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:10:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:10:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:11:16 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:11:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:12:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:28:18 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘modificar’:
+../src/Albumes.c:123:34: warning: ‘auxAnio’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  123 |        eAlbum[codigo].fecha.anio = auxAnio;
+      |        ~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:29:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:31:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘modificar’:
+../src/Albumes.c:102:6: warning: unused variable ‘i’ [-Wunused-variable]
+  102 |  int i ;
+      |      ^
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:32:10 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:34:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:39:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:45:14 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+../src/Menu.c: In function ‘menu’:
+../src/Menu.c:41:37: error: ‘codigo’ undeclared (first use in this function)
+   41 |      if(modificar(eAlbum, tamAlbum, codigo) == 1)
+      |                                     ^~~~~~
+../src/Menu.c:41:37: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:29: src/Menu.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+23:45:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:45:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Menu.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+23:48:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Menu.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
+Finished building: ../src/Menu.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:24:13: error: expected expression before ‘{’ token
+   24 |  album[0] = {101, "Miguel",{10,12,2001}, 200};
+      |             ^
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.

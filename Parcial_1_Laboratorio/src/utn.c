@@ -16,27 +16,36 @@
  *\param reintentos Cantidad de reintentos en el caso de error
  *\return En caso de exito (0) , en caso de error (-1)
  */
-int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, char minimo , char maximo , int repeticiones)
+int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones)
 {
-	char bufferChar ;
+//	char bufferChar [4030];
 	int respuesta = -1;
 
 	while(repeticiones >= 0)
 	{
-		if(pLetra != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo && repeticiones >= 0)
+		if(pLetra != NULL && mensaje != NULL && mensajeError != NULL && largo > 0 && repeticiones >= 0)
 		{
 			printf("%s",mensaje);
 			__fpurge(stdin);
-			scanf("%c",&bufferChar);
 
-			if(bufferChar >= minimo && bufferChar <= maximo)
+			if(fgets(pLetra , largo , stdin) != NULL)
 			{
-				*pLetra = bufferChar;
 				respuesta = 0;
 				break;
 			}else{
 				printf("%s",mensajeError);
 			}
+
+
+
+//			if(sizeof(bufferChar) >= minimo && sizeof(bufferChar) <= maximo)
+//			{
+//				strncpy(*&pLetra , bufferChar , sizeof(*pLetra));
+//				respuesta = 0;
+//				break;
+//			}else{
+//				printf("%s",mensajeError);
+//			}
 
 		}
 	}
@@ -135,33 +144,70 @@ int esAlfaNumerico(char str[])
 
 }
 
+int utn_pruenaInt(int* numero , int maximo , int minimo)
+{
+	int retorno;
 
-int utn_fecha(int* dia , int* mes , int* anio , char* mensaje , char* mensajeERROR , int repeticiones )
+	if(*numero <= maximo && *numero >= minimo)
+	{
+		retorno = 1;
+	}else{
+		retorno = -1;
+	}
+
+	return retorno;
+}
+
+int utn_fecha(int* dia , int* mes , int* anio )
 {
 	int retorno = -1;
-	int estado ;
+	int auxDia ;
+	int auxMes ;
+	int auxAnio ;
+	int aux;
 
-	if(dia != NULL && mes != NULL && anio != NULL )
+	//dia
+	printf("\nIngrese dia (entre 1 y 31): ");
+	scanf("%d", &auxDia);
+	aux = utn_pruenaInt(&auxDia, 31, 1);
+	while (aux != 1)
 	{
-
-
-		printf("\n%s",mensaje);
-		__fpurge(stdin);
-		estado = scanf("%d%d%d",*&dia , *&mes , *&anio);
-
-		while((estado != 3) && (*dia <= 1 && *dia >= 31)&& (*mes <= 1 && *mes >= 12) && (*anio <= 1990 && *anio >= 2022) )
-		{
-
-			system("cls");
-			printf("\n%s",mensajeERROR);
-			printf("\n%s",mensaje);
-			__fpurge(stdin);
-			estado = scanf("%d%d%d",dia , mes , anio);
-
-		}
-
-		retorno = 0;
+		printf("\nERROR ");
+		printf("\nIngrese dia (entre 1 y 31): ");
+		scanf("%d", &auxDia);
+		aux = utn_pruenaInt(&auxDia, 31, 1);
 	}
+	//mes
+	aux = 0;
+	printf("\nIngrese mes (entre 1 y 12): ");
+	scanf("%d", &auxMes);
+	aux = utn_pruenaInt(&auxMes, 12, 1);
+	while(aux != 1)
+	{
+		aux = 0;
+		printf("\nERROR ");
+		printf("\nIngrese mes (entre 1 y 12): ");
+		scanf("%d", &auxMes);
+		aux = utn_pruenaInt(&auxMes, 12, 1);
+	}
+	//año
+	aux = 0;
+	printf("\nIngrese anio (entre 1990 y 2022): ");
+	scanf("%d", &auxAnio);
+	aux = utn_pruenaInt(&auxAnio, 2022, 1990);
+	while(aux != 1)
+	{
+		aux = 0;
+		printf("\nERROR ");
+		printf("\nIngrese anio (entre 1990 y 2022) : ");
+		scanf("%d", &auxAnio);
+		aux = utn_pruenaInt(&auxAnio, 2022, 1990);
+
+	}
+	*dia = auxDia ;
+	*mes = auxMes;
+	*anio = auxAnio ;
+	retorno = 1;
 
 	return retorno;
 }
