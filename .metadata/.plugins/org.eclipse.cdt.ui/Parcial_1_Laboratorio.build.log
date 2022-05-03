@@ -1,19 +1,6 @@
-23:48:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+22:45:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
 make all 
-Building file: ../src/Menu.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Menu.d" -MT"src/Menu.o" -o "src/Menu.o" "../src/Menu.c"
-Finished building: ../src/Menu.c
- 
-Building file: ../src/Parcial_1_Laboratorio.c
-Invoking: GCC C Compiler
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
-../src/Parcial_1_Laboratorio.c: In function ‘main’:
-../src/Parcial_1_Laboratorio.c:24:13: error: expected expression before ‘{’ token
-   24 |  album[0] = {101, "Miguel",{10,12,2001}, 200};
-      |             ^
-make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
-"make all" terminated with exit code 2. Build might be incomplete.
+make: No se hace nada para 'all'.
 
-23:48:17 Build Failed. 2 errors, 0 warnings. (took 516ms)
+22:45:53 Build Finished. 0 errors, 0 warnings. (took 473ms)
 

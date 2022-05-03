@@ -13,8 +13,12 @@
 #define VACIO 0
 #define OCUPADO 1
 //bibliotecas
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
 #include "utn.h"
-#include "Menu.h"
 
 //tipo artista
 #define SOLISTA 1
@@ -57,12 +61,19 @@ typedef struct{
 	int idGenero;
 	int isEmpty ;
 }eAlbum;
-
+//abm
 int inicilizar(eAlbum* eAlbum,int tamAlbum);
 int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre);
 int alta(eAlbum* eAlbum , int tamAlbum , int id);
 int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo);
 int buscarCodigo(eAlbum* eAlbum , int tamAlbum , int valorBuscardo);
-
-
+int baja(eAlbum* eAlbum , int tamAlbum , int* codigo);
+void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe);
+//Informar
+void informarTodoAlbum (eAlbum* album , int tamAlbum );
+int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportes , int* cantidadMayorPromedio);
+void informar_Total_Promedio_Cuantos(eAlbum* album , int tamAlbum , int total , float promedioImportes , int cantidadMayorPromedio);
+int cantidadAlbumesFecha(eAlbum* album , int tamAlbum , int* cantidad );
+//menu
+void menu( eAlbum* eAlbum , int tamAlbum );
 #endif /* ALBUMES_H_ */

@@ -15,13 +15,14 @@
 #include <math.h>
 #include "utn.h"
 #include "Albumes.h"
+
 #define CANTIDAD 10
 int main(void) {
 
 	setbuf(stdout,NULL);
 	eAlbum album[CANTIDAD];
 
-	album[0] = {101, "Miguel",{10,12,2001}, 200};
+	inicilizar(album, CANTIDAD);
 	menu(album , CANTIDAD);
 
 	return EXIT_SUCCESS;

@@ -1,0 +1,21 @@
+/*
+ * Informar.h
+ *
+ *  Created on: 2 may. 2022
+ *      Author: miguel
+ */
+
+#ifndef INFORMAR_H_
+#define INFORMAR_H_
+#include <stdio_ext.h>
+#include <stdlib.h>
+#include <string.h>
+#include <ctype.h>
+#include <math.h>
+#include "utn.h"
+#include "Albumes.h"
+#include "Menu.h"
+
+int	informar_calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportes , int* cantidadMayorPromedio);
+
+#endif /* INFORMAR_H_ */
