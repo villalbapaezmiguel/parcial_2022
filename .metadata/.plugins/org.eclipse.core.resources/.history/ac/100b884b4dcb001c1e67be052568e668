@@ -56,7 +56,7 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 //	int auxDiaAlbum ;
 //	int auxMesAlbum;
 //	int auxAnioAlbum ;
-//	int auxImporteAlbum ;
+	int auxImporteAlbum ;
 //	int auxCodigoAlbum;
 //	int i;
 	eAlbum auxAlbum ;
@@ -81,16 +81,18 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 				estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
 			}
 
-			estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+			estadoImporte = utn_pedirInt(&auxImporteAlbum, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			while ( estadoImporte == -1)
 			{
-				estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+				estadoImporte = utn_pedirInt(&auxImporteAlbum, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			}
 
 			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
+			auxAlbum.importe = auxImporteAlbum;
 			auxAlbum.codigoAlbum = nuevoId();
 			Album[lugarLibre] = auxAlbum;
-			Album[lugarLibre].isEmpty = OCUPADO;//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
+
+
 			retorno = 1;
 
 		}else{

@@ -48,50 +48,36 @@ int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
 	return retorno;
 }
 
-int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
+int alta(eAlbum* Album , int tamAlbum , int id , int indice)
 {
 	int retorno = -1;
 	//Album
 	char auxTituloAlbum[51];
-//	int auxDiaAlbum ;
-//	int auxMesAlbum;
-//	int auxAnioAlbum ;
-//	int auxImporteAlbum ;
-//	int auxCodigoAlbum;
-//	int i;
+	int auxDiaAlbum ;
+	int auxMesAlbum;
+	int auxAnioAlbum ;
+	int auxImporteAlbum ;
+	int auxCodigoAlbum;
+	int i;
 	eAlbum auxAlbum ;
 
 	int estadoTitulo = -1;
-	int estadoFecha = -1;
-	int estadoImporte = -1;
 
 	if(Album != NULL && tamAlbum > 0)
 	{
-		if(Album[lugarLibre].isEmpty == VACIO)
+		if(Album[indice].isEmpty == VACIO)
 		{
 			estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
-			while ( estadoTitulo == -1)
+
+			while ( estadoTitulo != -1)
 			{
 				estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			}
 
-			estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
-			while ( estadoFecha == -1)
+			while ( estadoTitulo != -1)
 			{
-				estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
+				estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			}
-
-			estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
-			while ( estadoImporte == -1)
-			{
-				estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
-			}
-
-			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
-			auxAlbum.codigoAlbum = nuevoId();
-			Album[lugarLibre] = auxAlbum;
-			Album[lugarLibre].isEmpty = OCUPADO;//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
-			retorno = 1;
 
 		}else{
 			printf("\nEse espacio esta ocupado ");
@@ -106,45 +92,52 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 
 
 
-//	if(Album != NULL && tamAlbum > 0)
-//	{
-//		if(Album[id].isEmpty == VACIO)
-//		{
-//			//Album
-//			if(utn_pedirChar(auxTituloAlbum, "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2) == 0)
-//			{
-//				if(utn_fecha(&auxDiaAlbum, &auxMesAlbum, &auxAnioAlbum) == 1)
-//				{
-//					if(utn_pedirInt(&auxImporteAlbum, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2)== 0)
-//					{
-//						if(utn_pedirInt(&auxCodigoAlbum, "\nIngrese el codigo (solo puede tener 5 digitos):","\nERROR", 1, 99999, 2)== 0)
-//						{
-//							//Album
-//							if(Album[id].codigoAlbum == auxCodigoAlbum)
-//							{
-//								printf("\nEl codigo : %d  esta libre y ya se le sido asignado ", auxCodigoAlbum);
-//							}else{
-//								printf("\n el codigo %d ya esta siendo ocupado ", auxCodigoAlbum);
-//
-//								for (i = 0; i < tamAlbum; ++i) {
-//
-//									if(Album[i].isEmpty == VACIO)
-//									{
-//										printf("\n el codigo libre es %d ", i);
-//
-//										break ;
-//									}
-//								}
-//							}
-//						retorno = 1;
-//
-//						}
-//					}
-//				}
-//			}
-//
-//		}
-//	}
+	if(Album != NULL && tamAlbum > 0)
+	{
+		if(Album[id].isEmpty == VACIO)
+		{
+			//Album
+			if(utn_pedirChar(auxTituloAlbum, "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2) == 0)
+			{
+				if(utn_fecha(&auxDiaAlbum, &auxMesAlbum, &auxAnioAlbum) == 1)
+				{
+					if(utn_pedirInt(&auxImporteAlbum, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2)== 0)
+					{
+						if(utn_pedirInt(&auxCodigoAlbum, "\nIngrese el codigo (solo puede tener 5 digitos):","\nERROR", 1, 99999, 2)== 0)
+						{
+							//Album
+							if(Album[id].codigoAlbum == auxCodigoAlbum)
+							{
+								printf("\nEl codigo : %d  esta libre y ya se le sido asignado ", auxCodigoAlbum);
+							}else{
+								printf("\n el codigo %d ya esta siendo ocupado ", auxCodigoAlbum);
+
+								for (i = 0; i < tamAlbum; ++i) {
+
+									if(Album[i].isEmpty == VACIO)
+									{
+										printf("\n el codigo libre es %d ", i);
+
+										break ;
+									}
+								}
+							}
+
+						strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
+						auxAlbum.fecha.dia = auxDiaAlbum;
+						auxAlbum.fecha.mes = auxMesAlbum;
+						auxAlbum.fecha.anio = auxAnioAlbum;
+						auxAlbum.importe = auxImporteAlbum;
+						Album[indice] = auxAlbum;
+						retorno = 1;
+
+						}
+					}
+				}
+			}
+
+		}
+	}
 
 	return retorno ;
 }
@@ -378,8 +371,6 @@ void menu( eAlbum* eAlbum , int tamAlbum )
 				{
 					printf("\nAlta finalizada");
 
-				}else{
-					printf("\nERROR ");
 				}
 				break;
 			case 2:
@@ -435,19 +426,15 @@ int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int *aux
 	{
 		if(buscarLugarLibre(album, tamAlbum, *&auxLugarLibre) == 1)
 		{
-			if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+			if(alta(album, tamAlbum, *auxLugarLibre , *auxIndice) == 1)
 			{
 				estado = 1;
 				printf("\nFin del Alta");
 			}else{
 				printf("\npaso algo ");
 			}
-		}else{
-			printf("\nNo se encontro lugar libre ");
 		}
 
-	}else{
-		printf("\nERROR");
 	}
 
 	return estado ;

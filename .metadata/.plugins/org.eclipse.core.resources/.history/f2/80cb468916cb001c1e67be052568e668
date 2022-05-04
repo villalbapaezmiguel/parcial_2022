@@ -64,7 +64,7 @@ typedef struct{
 //abm
 int inicilizar(eAlbum* eAlbum,int tamAlbum);
 int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre);
-int alta(eAlbum* Album , int tamAlbum , int lugarLibre);
+int alta(eAlbum* eAlbum , int tamAlbum , int id);
 int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo);
 int buscarCodigo(eAlbum* eAlbum , int tamAlbum , int valorBuscardo);
 int baja(eAlbum* eAlbum , int tamAlbum , int* codigo);
@@ -77,8 +77,5 @@ int cantidadAlbumesFecha(eAlbum* album , int tamAlbum , int* cantidad );
 //menu
 void menu( eAlbum* eAlbum , int tamAlbum );
 //Simplificacion ABM
-int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int* auxIndice);
-int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );
-int bajaSimplificada (eAlbum* album , int tamAlbum , int* auxCodigoBaja );
-
+int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre );
 #endif /* ALBUMES_H_ */

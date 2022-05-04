@@ -90,7 +90,7 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
 			auxAlbum.codigoAlbum = nuevoId();
 			Album[lugarLibre] = auxAlbum;
-			Album[lugarLibre].isEmpty = OCUPADO;//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
+			Album[lugarLibre].isEmpty = OCUPADO;
 			retorno = 1;
 
 		}else{

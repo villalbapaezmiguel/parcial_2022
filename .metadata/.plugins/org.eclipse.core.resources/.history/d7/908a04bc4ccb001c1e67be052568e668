@@ -48,7 +48,7 @@ int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
 	return retorno;
 }
 
-int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
+int alta(eAlbum* Album , int tamAlbum , int id , int indice)
 {
 	int retorno = -1;
 	//Album
@@ -56,7 +56,7 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 //	int auxDiaAlbum ;
 //	int auxMesAlbum;
 //	int auxAnioAlbum ;
-//	int auxImporteAlbum ;
+	int auxImporteAlbum ;
 //	int auxCodigoAlbum;
 //	int i;
 	eAlbum auxAlbum ;
@@ -67,30 +67,32 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 
 	if(Album != NULL && tamAlbum > 0)
 	{
-		if(Album[lugarLibre].isEmpty == VACIO)
+		if(Album[indice].isEmpty == VACIO)
 		{
 			estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
-			while ( estadoTitulo == -1)
+			while ( estadoTitulo != -1)
 			{
 				estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			}
 
 			estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
-			while ( estadoFecha == -1)
+			while ( estadoFecha != -1)
 			{
 				estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
 			}
 
-			estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
-			while ( estadoImporte == -1)
+			estadoImporte = utn_pedirInt(&auxImporteAlbum, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+			while ( estadoImporte != -1)
 			{
-				estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+				estadoImporte = utn_pedirInt(&auxImporteAlbum, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			}
 
 			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
+			auxAlbum.importe = auxImporteAlbum;
 			auxAlbum.codigoAlbum = nuevoId();
-			Album[lugarLibre] = auxAlbum;
-			Album[lugarLibre].isEmpty = OCUPADO;//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
+			Album[indice] = auxAlbum;
+
+
 			retorno = 1;
 
 		}else{
@@ -435,7 +437,7 @@ int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int *aux
 	{
 		if(buscarLugarLibre(album, tamAlbum, *&auxLugarLibre) == 1)
 		{
-			if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+			if(alta(album, tamAlbum, *auxLugarLibre , *auxIndice) == 1)
 			{
 				estado = 1;
 				printf("\nFin del Alta");
@@ -446,8 +448,6 @@ int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int *aux
 			printf("\nNo se encontro lugar libre ");
 		}
 
-	}else{
-		printf("\nERROR");
 	}
 
 	return estado ;

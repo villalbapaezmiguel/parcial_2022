@@ -6124,3 +6124,2089 @@ Finished building target: Parcial_1_Laboratorio
 22:45:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
 make all 
 make: No se hace nada para 'all'.
+16:14:16 **** Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:17:23 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:297:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+  297 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:387:38: error: unknown type name ‘tamAlbum’; did you mean ‘eAlbum’?
+  387 | int altaSimplificada(eAlbum* album , tamAlbum , auxLugarLibre )
+      |                                      ^~~~~~~~
+      |                                      eAlbum
+../src/Albumes.c:387:49: error: unknown type name ‘auxLugarLibre’
+  387 | int altaSimplificada(eAlbum* album , tamAlbum , auxLugarLibre )
+      |                                                 ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:17:48 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:297:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+  297 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:393:40: warning: passing argument 3 of ‘buscarLugarLibre’ from incompatible pointer type [-Wincompatible-pointer-types]
+  393 |   if(buscarLugarLibre(album, tamAlbum, &auxLugarLibre) == 1)
+      |                                        ^~~~~~~~~~~~~~
+      |                                        |
+      |                                        int **
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int **’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c:395:29: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  395 |    if(alta(album, tamAlbum, auxLugarLibre) == 1)
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             int *
+../src/Albumes.c:51:46: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* eAlbum , int tamAlbum , int id)
+      |                                          ~~~~^~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:18:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:297:6: warning: unused variable ‘auxLugarLibre’ [-Wunused-variable]
+  297 |  int auxLugarLibre ;
+      |      ^~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:18:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:22:42 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:398:84: error: expected declaration specifiers or ‘...’ before ‘)’ token
+  398 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int auxCodigoBuscado , )
+      |                                                                                    ^
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:22:49 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘modificacionSimplificada’:
+../src/Albumes.c:408:143: error: expected expression before ‘eAlbum’
+  408 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,eAlbum[auxCodigoBuscado].importe);
+      |                                                                                                                                               ^~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:23:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:338:155: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  338 |       eAlbum[auxCodigoBuscado].titulo ,eAlbum[auxCodigoBuscado].fecha.dia, eAlbum[auxCodigoBuscado].fecha.mes , eAlbum[auxCodigoBuscado].fecha.anio,eAlbum[auxCodigoBuscado].importe);
+      |                                                                                                                                                           ^
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:24:26 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:24:44 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:27:18 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBaja;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:411:54: error: unknown type name ‘auxCodigoBaja’
+  411 | int bajaSimplificada (eAlbum* album , int tamAlbum , auxCodigoBaja)
+      |                                                      ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:27:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBaja;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:411:54: error: unknown type name ‘auxCodigoBaja’
+  411 | int bajaSimplificada (eAlbum* album , int tamAlbum , auxCodigoBaja)
+      |                                                      ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:28:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBaja;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:411:54: error: unknown type name ‘auxCodigoBaja’
+  411 | int bajaSimplificada (eAlbum* album , int tamAlbum , auxCodigoBaja)
+      |                                                      ^~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:29:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBaja;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c: In function ‘bajaSimplificada’:
+../src/Albumes.c:422:10: error: ‘auxCodigoBuscado’ undeclared (first use in this function); did you mean ‘auxCodigoBaja’?
+  422 |    album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |          ^~~~~~~~~~~~~~~~
+      |          auxCodigoBaja
+../src/Albumes.c:422:10: note: each undeclared identifier is reported only once for each function it appears in
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:30:09 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBaja;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:30:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBaja;
+      |      ^~~~~~~~~~~~~
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:31:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:336:33: error: expected ‘;’ before ‘}’ token
+  336 |      printf("\nBaja finalizada")
+      |                                 ^
+      |                                 ;
+  337 |     }
+      |     ~                            
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:31:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:334:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  334 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:32:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja, auxCodigoBuscadoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBuscadoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:32:42 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:328:51: warning: passing argument 3 of ‘modificacionSimplificada’ makes integer from pointer without a cast [-Wint-conversion]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, &auxCodigoBuscado) == 1)
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:65: note: expected ‘int’ but argument is of type ‘int *’
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int auxCodigoBuscado  );
+      |                                                             ~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja, auxCodigoBuscadoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBuscadoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:33:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja, auxCodigoBuscadoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBuscadoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:36:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja, auxCodigoBuscadoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBuscadoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:36:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:36:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:38:27 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBuscadoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBuscadoBaja ;
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:38:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:39:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:39:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:41:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBuscadoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBuscadoBaja ;
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:41:41 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:41:44 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:45:30 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBuscadoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBuscadoBaja ;
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:427:5: error: conflicting types for ‘bajaSimplificada’
+  427 | int bajaSimplificada(eAlbum* album , int tamAlbum , int auxCodigoBaja)
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: previous declaration of ‘bajaSimplificada’ was here
+   82 | int bajaSimplificada (eAlbum* album , int tamAlbum , int auxCodigoBaja , int auxCodigoBuscado );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:45:57 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBuscadoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBuscadoBaja ;
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:47:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:299:6: warning: unused variable ‘auxCodigoBuscadoBaja’ [-Wunused-variable]
+  299 |  int auxCodigoBuscadoBaja ;
+      |      ^~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:328:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  328 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:336:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  336 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:47:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:47:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:51: warning: passing argument 3 of ‘modificacionSimplificada’ makes integer from pointer without a cast [-Wint-conversion]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, &auxCodigoBuscado) == 1)
+      |                                                   ^~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:65: note: expected ‘int’ but argument is of type ‘int *’
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int auxCodigoBuscado  );
+      |                                                             ~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:47:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:48:11 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:406:5: error: conflicting types for ‘modificacionSimplificada’
+  406 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  )
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:5: note: previous declaration of ‘modificacionSimplificada’ was here
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int auxCodigoBuscado  );
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘modificacionSimplificada’:
+../src/Albumes.c:410:15: warning: passing argument 1 of ‘utn_pedirInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  410 |  utn_pedirInt(&auxCodigoBuscado, "\nIngrese el codigo (de 5 digitos) :","\nERROR", 1, 99999, 2);
+      |               ^~~~~~~~~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int **’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:411:51: warning: passing argument 3 of ‘buscarCodigo’ makes integer from pointer without a cast [-Wint-conversion]
+  411 |  auxCodigoBuscado = buscarCodigo(album, tamAlbum, auxCodigoBuscado);
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int *
+../src/Albumes.c:144:54: note: expected ‘int’ but argument is of type ‘int *’
+  144 | int buscarCodigo(eAlbum* eAlbum , int tamAlbum , int valorBuscardo)
+      |                                                  ~~~~^~~~~~~~~~~~~
+../src/Albumes.c:411:19: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  411 |  auxCodigoBuscado = buscarCodigo(album, tamAlbum, auxCodigoBuscado);
+      |                   ^
+../src/Albumes.c:412:22: warning: comparison between pointer and integer
+  412 |  if(auxCodigoBuscado != -1)
+      |                      ^~
+../src/Albumes.c:416:10: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |          ^
+../src/Albumes.c:416:42: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                          ^
+../src/Albumes.c:416:77: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                             ^
+../src/Albumes.c:416:113: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                 ^
+../src/Albumes.c:416:148: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                                                    ^
+../src/Albumes.c:418:33: warning: passing argument 3 of ‘modificar’ makes integer from pointer without a cast [-Wint-conversion]
+  418 |   if(modificar(album, tamAlbum, auxCodigoBuscado) == 1)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 int *
+../src/Albumes.c:103:50: note: expected ‘int’ but argument is of type ‘int *’
+  103 | int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo)
+      |                                              ~~~~^~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:48:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:51: warning: passing argument 3 of ‘modificacionSimplificada’ makes pointer from integer without a cast [-Wint-conversion]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:66: note: expected ‘int *’ but argument is of type ‘int’
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );
+      |                                                             ~~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘modificacionSimplificada’:
+../src/Albumes.c:410:15: warning: passing argument 1 of ‘utn_pedirInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  410 |  utn_pedirInt(&auxCodigoBuscado, "\nIngrese el codigo (de 5 digitos) :","\nERROR", 1, 99999, 2);
+      |               ^~~~~~~~~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int **’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:411:51: warning: passing argument 3 of ‘buscarCodigo’ makes integer from pointer without a cast [-Wint-conversion]
+  411 |  auxCodigoBuscado = buscarCodigo(album, tamAlbum, auxCodigoBuscado);
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int *
+../src/Albumes.c:144:54: note: expected ‘int’ but argument is of type ‘int *’
+  144 | int buscarCodigo(eAlbum* eAlbum , int tamAlbum , int valorBuscardo)
+      |                                                  ~~~~^~~~~~~~~~~~~
+../src/Albumes.c:411:19: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  411 |  auxCodigoBuscado = buscarCodigo(album, tamAlbum, auxCodigoBuscado);
+      |                   ^
+../src/Albumes.c:412:22: warning: comparison between pointer and integer
+  412 |  if(auxCodigoBuscado != -1)
+      |                      ^~
+../src/Albumes.c:416:10: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |          ^
+../src/Albumes.c:416:42: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                          ^
+../src/Albumes.c:416:77: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                             ^
+../src/Albumes.c:416:113: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                 ^
+../src/Albumes.c:416:148: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                                                    ^
+../src/Albumes.c:418:33: warning: passing argument 3 of ‘modificar’ makes integer from pointer without a cast [-Wint-conversion]
+  418 |   if(modificar(album, tamAlbum, auxCodigoBuscado) == 1)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 int *
+../src/Albumes.c:103:50: note: expected ‘int’ but argument is of type ‘int *’
+  103 | int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo)
+      |                                              ~~~~^~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:48:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:51: warning: passing argument 3 of ‘modificacionSimplificada’ makes pointer from integer without a cast [-Wint-conversion]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:66: note: expected ‘int *’ but argument is of type ‘int’
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );
+      |                                                             ~~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘modificacionSimplificada’:
+../src/Albumes.c:410:15: warning: passing argument 1 of ‘utn_pedirInt’ from incompatible pointer type [-Wincompatible-pointer-types]
+  410 |  utn_pedirInt(&auxCodigoBuscado, "\nIngrese el codigo (de 5 digitos) :","\nERROR", 1, 99999, 2);
+      |               ^~~~~~~~~~~~~~~~~
+      |               |
+      |               int **
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int **’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:411:51: warning: passing argument 3 of ‘buscarCodigo’ makes integer from pointer without a cast [-Wint-conversion]
+  411 |  auxCodigoBuscado = buscarCodigo(album, tamAlbum, auxCodigoBuscado);
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int *
+../src/Albumes.c:144:54: note: expected ‘int’ but argument is of type ‘int *’
+  144 | int buscarCodigo(eAlbum* eAlbum , int tamAlbum , int valorBuscardo)
+      |                                                  ~~~~^~~~~~~~~~~~~
+../src/Albumes.c:411:19: warning: assignment to ‘int *’ from ‘int’ makes pointer from integer without a cast [-Wint-conversion]
+  411 |  auxCodigoBuscado = buscarCodigo(album, tamAlbum, auxCodigoBuscado);
+      |                   ^
+../src/Albumes.c:412:22: warning: comparison between pointer and integer
+  412 |  if(auxCodigoBuscado != -1)
+      |                      ^~
+../src/Albumes.c:416:10: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |          ^
+../src/Albumes.c:416:42: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                          ^
+../src/Albumes.c:416:77: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                             ^
+../src/Albumes.c:416:113: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                 ^
+../src/Albumes.c:416:148: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                                                    ^
+../src/Albumes.c:418:33: warning: passing argument 3 of ‘modificar’ makes integer from pointer without a cast [-Wint-conversion]
+  418 |   if(modificar(album, tamAlbum, auxCodigoBuscado) == 1)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 int *
+../src/Albumes.c:103:50: note: expected ‘int’ but argument is of type ‘int *’
+  103 | int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo)
+      |                                              ~~~~^~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:48:51 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:51: warning: passing argument 3 of ‘modificacionSimplificada’ makes pointer from integer without a cast [-Wint-conversion]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:66: note: expected ‘int *’ but argument is of type ‘int’
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );
+      |                                                             ~~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘modificacionSimplificada’:
+../src/Albumes.c:412:22: warning: comparison between pointer and integer
+  412 |  if(auxCodigoBuscado != -1)
+      |                      ^~
+../src/Albumes.c:416:10: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |          ^
+../src/Albumes.c:416:42: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                          ^
+../src/Albumes.c:416:77: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                             ^
+../src/Albumes.c:416:113: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                 ^
+../src/Albumes.c:416:148: error: array subscript is not an integer
+  416 |     album[auxCodigoBuscado].titulo ,album[auxCodigoBuscado].fecha.dia, album[auxCodigoBuscado].fecha.mes , album[auxCodigoBuscado].fecha.anio,album[auxCodigoBuscado].importe);
+      |                                                                                                                                                    ^
+../src/Albumes.c:418:33: warning: passing argument 3 of ‘modificar’ makes integer from pointer without a cast [-Wint-conversion]
+  418 |   if(modificar(album, tamAlbum, auxCodigoBuscado) == 1)
+      |                                 ^~~~~~~~~~~~~~~~
+      |                                 |
+      |                                 int *
+../src/Albumes.c:103:50: note: expected ‘int’ but argument is of type ‘int *’
+  103 | int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo)
+      |                                              ~~~~^~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:49:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:327:51: warning: passing argument 3 of ‘modificacionSimplificada’ makes pointer from integer without a cast [-Wint-conversion]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |                                                   ^~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:81:66: note: expected ‘int *’ but argument is of type ‘int’
+   81 | int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );
+      |                                                             ~~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c:327:8: warning: ‘auxCodigoBuscado’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  327 |     if(modificacionSimplificada(eAlbum, tamAlbum, auxCodigoBuscado) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:49:41 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:335:8: warning: ‘auxCodigoBaja’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  335 |     if(bajaSimplificada(eAlbum, tamAlbum, auxCodigoBaja) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:50:31 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:431:5: error: conflicting types for ‘bajaSimplificada’
+  431 | int bajaSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBaja)
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: previous declaration of ‘bajaSimplificada’ was here
+   82 | int bajaSimplificada (eAlbum* album , int tamAlbum , int auxCodigoBaja );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+16:50:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+16:50:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+16:59:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:107:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  107 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:00:38 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:01:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:12:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:13:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:13:18 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:18:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:18:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:20:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:57: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(&auxAlbum, tamAlbum, auxAlbum.codigoAlbum);
+      |                                                 ~~~~~~~~^~~~~~~~~~~~
+      |                                                         |
+      |                                                         int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:21:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:43:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:409:7: error: too few arguments to function ‘alta’
+  409 |    if(alta(album, tamAlbum, *auxLugarLibre) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int id , int indice)
+      |     ^~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:48:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:401:5: error: conflicting types for ‘altaSimplificada’
+  401 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int auxIndice )
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:80:5: note: previous declaration of ‘altaSimplificada’ was here
+   80 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre );
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:48:24 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:335:8: error: too few arguments to function ‘altaSimplificada’
+  335 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:80:5: note: declared here
+   80 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int auxIndice);
+      |     ^~~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:49:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:336:8: warning: ‘auxindice’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  336 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:49:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c: At top level:
+../src/Albumes.c:402:5: error: conflicting types for ‘altaSimplificada’
+  402 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int *auxIndice )
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:80:5: note: previous declaration of ‘altaSimplificada’ was here
+   80 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int auxIndice);
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:410:46: warning: passing argument 4 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  410 |    if(alta(album, tamAlbum, *auxLugarLibre , auxIndice) == 1)
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              int *
+../src/Albumes.c:51:54: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int id , int indice)
+      |                                                  ~~~~^~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+18:50:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:336:60: warning: passing argument 4 of ‘altaSimplificada’ makes pointer from integer without a cast [-Wint-conversion]
+  336 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , auxindice ) == 1)
+      |                                                            ^~~~~~~~~
+      |                                                            |
+      |                                                            int
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:80:78: note: expected ‘int *’ but argument is of type ‘int’
+   80 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int* auxIndice);
+      |                                                                         ~~~~~^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:410:46: warning: passing argument 4 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  410 |    if(alta(album, tamAlbum, *auxLugarLibre , auxIndice) == 1)
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              int *
+../src/Albumes.c:51:54: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int id , int indice)
+      |                                                  ~~~~^~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:336:8: warning: ‘auxindice’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  336 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:50:18 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:410:46: warning: passing argument 4 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  410 |    if(alta(album, tamAlbum, *auxLugarLibre , auxIndice) == 1)
+      |                                              ^~~~~~~~~
+      |                                              |
+      |                                              int *
+../src/Albumes.c:51:54: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int id , int indice)
+      |                                                  ~~~~^~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:57:11 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:58:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:03:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:03:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:08:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:83:53: warning: passing argument 3 of ‘buscarLugarLibre’ makes pointer from integer without a cast [-Wint-conversion]
+   83 |           buscarLugarLibre(Album, tamAlbum, auxAlbum.codigoAlbum);
+      |                                             ~~~~~~~~^~~~~~~~~~~~
+      |                                                     |
+      |                                                     int
+../src/Albumes.c:29:58: note: expected ‘int *’ but argument is of type ‘int’
+   29 | int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
+      |                                                     ~~~~~^~~~~~~~~~
+At top level:
+../src/Albumes.c:111:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  111 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:12:41 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:110:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  110 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:12:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:17:24 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:110:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  110 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:17:30 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:20:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:61:6: warning: unused variable ‘i’ [-Wunused-variable]
+   61 |  int i;
+      |      ^
+At top level:
+../src/Albumes.c:105:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  105 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:21:09 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:104:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  104 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:21:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:104:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  104 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:21:49 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:22:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:104:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  104 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:22:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:23:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:108:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  108 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:25:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:112:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  112 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:25:09 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:26:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:112:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  112 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:26:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+21:35:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:113:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  113 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:35:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:11:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:113:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  113 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:11:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:11:37 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:13:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:113:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  113 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:13:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:14:09 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:14:11 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:15:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:114:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  114 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:16:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:17:10 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:113:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  113 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:17:20 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:113:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  113 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:17:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:20:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:113:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  113 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:20:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:20:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:28:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:137:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  137 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:31:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:148:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  148 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:38:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:78:42: warning: passing argument 1 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |    estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                            ~~~~~~~~~~~~~~^~~~
+      |                                          |
+      |                                          int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:20: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |               ~~~~~^~~
+../src/Albumes.c:78:62: warning: passing argument 2 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |    estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                                                ~~~~~~~~~~~~~~^~~~
+      |                                                              |
+      |                                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:31: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |                          ~~~~~^~~
+../src/Albumes.c:78:82: warning: passing argument 3 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |    estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                                                                    ~~~~~~~~~~~~~~^~~~~
+      |                                                                                  |
+      |                                                                                  int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:42: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |                                     ~~~~~^~~~
+../src/Albumes.c:81:43: warning: passing argument 1 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   81 |     estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                             ~~~~~~~~~~~~~~^~~~
+      |                                           |
+      |                                           int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:20: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |               ~~~~~^~~
+../src/Albumes.c:81:63: warning: passing argument 2 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   81 |     estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                                                 ~~~~~~~~~~~~~~^~~~
+      |                                                               |
+      |                                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:31: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |                          ~~~~~^~~
+../src/Albumes.c:81:83: warning: passing argument 3 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   81 |     estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                                                                     ~~~~~~~~~~~~~~^~~~~
+      |                                                                                   |
+      |                                                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:42: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |                                     ~~~~~^~~~
+At top level:
+../src/Albumes.c:157:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  157 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:38:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:78:42: warning: passing argument 1 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |    estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                            ~~~~~~~~~~~~~~^~~~
+      |                                          |
+      |                                          int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:20: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |               ~~~~~^~~
+../src/Albumes.c:78:62: warning: passing argument 2 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |    estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                                                ~~~~~~~~~~~~~~^~~~
+      |                                                              |
+      |                                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:31: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |                          ~~~~~^~~
+../src/Albumes.c:78:82: warning: passing argument 3 of ‘utn_fecha’ makes pointer from integer without a cast [-Wint-conversion]
+   78 |    estadoFecha = utn_fecha(auxAlbum.fecha.dia, auxAlbum.fecha.mes, auxAlbum.fecha.anio);
+      |                                                                    ~~~~~~~~~~~~~~^~~~~
+      |                                                                                  |
+      |                                                                                  int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:20:42: note: expected ‘int *’ but argument is of type ‘int’
+   20 | int utn_fecha(int* dia , int* mes , int* anio );
+      |                                     ~~~~~^~~~
+At top level:
+../src/Albumes.c:157:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  157 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:39:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:157:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  157 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:47:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:61:6: warning: unused variable ‘i’ [-Wunused-variable]
+   61 |  int i;
+      |      ^
+../src/Albumes.c:60:6: warning: unused variable ‘auxCodigoAlbum’ [-Wunused-variable]
+   60 |  int auxCodigoAlbum;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:91:23: warning: ‘auxDiaAlbum’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   91 |    auxAlbum.fecha.dia = auxDiaAlbum;
+      |    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../src/Albumes.c:92:23: warning: ‘auxMesAlbum’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   92 |    auxAlbum.fecha.mes = auxMesAlbum;
+      |    ~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../src/Albumes.c:93:24: warning: ‘auxAnioAlbum’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   93 |    auxAlbum.fecha.anio = auxAnioAlbum;
+      |    ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:47:48 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:61:6: warning: unused variable ‘i’ [-Wunused-variable]
+   61 |  int i;
+      |      ^
+../src/Albumes.c:60:6: warning: unused variable ‘auxCodigoAlbum’ [-Wunused-variable]
+   60 |  int auxCodigoAlbum;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:58:6: warning: unused variable ‘auxAnioAlbum’ [-Wunused-variable]
+   58 |  int auxAnioAlbum ;
+      |      ^~~~~~~~~~~~
+../src/Albumes.c:57:6: warning: unused variable ‘auxMesAlbum’ [-Wunused-variable]
+   57 |  int auxMesAlbum;
+      |      ^~~~~~~~~~~
+../src/Albumes.c:56:6: warning: unused variable ‘auxDiaAlbum’ [-Wunused-variable]
+   56 |  int auxDiaAlbum ;
+      |      ^~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:48:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:48:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:48:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:48:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:50:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:50:57 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:51:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:51:41 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:53:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:51:5: error: conflicting types for ‘alta’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
+      |     ^~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:67:5: note: previous declaration of ‘alta’ was here
+   67 | int alta(eAlbum* Album , int tamAlbum , int id , int indice);
+      |     ^~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+22:54:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:54:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:54:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:55:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:55:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:152:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  152 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:55:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:57:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:84:41: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   84 |    estadoImporte = utn_pedirInt(auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+      |                                 ~~~~~~~~^~~~~~~~
+      |                                         |
+      |                                         int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:87:42: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   87 |     estadoImporte = utn_pedirInt(auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+      |                                  ~~~~~~~~^~~~~~~~
+      |                                          |
+      |                                          int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+At top level:
+../src/Albumes.c:152:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  152 | static int nuevoId(void)
+      |            ^~~~~~~
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:91:21: warning: ‘auxImporteAlbum’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   91 |    auxAlbum.importe = auxImporteAlbum;
+      |    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:57:14 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:152:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  152 | static int nuevoId(void)
+      |            ^~~~~~~
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:91:21: warning: ‘auxImporteAlbum’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+   91 |    auxAlbum.importe = auxImporteAlbum;
+      |    ~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:57:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:59:6: warning: unused variable ‘auxImporteAlbum’ [-Wunused-variable]
+   59 |  int auxImporteAlbum ;
+      |      ^~~~~~~~~~~~~~~
+At top level:
+../src/Albumes.c:151:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  151 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:57:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:151:12: warning: ‘nuevoId’ defined but not used [-Wunused-function]
+  151 | static int nuevoId(void)
+      |            ^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:57:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:58:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+22:59:32 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+22:59:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+23:00:44 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 

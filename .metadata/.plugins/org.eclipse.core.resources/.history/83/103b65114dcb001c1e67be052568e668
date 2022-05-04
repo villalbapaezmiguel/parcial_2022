@@ -64,7 +64,7 @@ typedef struct{
 //abm
 int inicilizar(eAlbum* eAlbum,int tamAlbum);
 int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre);
-int alta(eAlbum* Album , int tamAlbum , int lugarLibre);
+int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 int modificar(eAlbum* eAlbum ,int tamAlbum , int codigo);
 int buscarCodigo(eAlbum* eAlbum , int tamAlbum , int valorBuscardo);
 int baja(eAlbum* eAlbum , int tamAlbum , int* codigo);

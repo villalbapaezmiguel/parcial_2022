@@ -56,7 +56,7 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 //	int auxDiaAlbum ;
 //	int auxMesAlbum;
 //	int auxAnioAlbum ;
-//	int auxImporteAlbum ;
+	int auxImporteAlbum ;
 //	int auxCodigoAlbum;
 //	int i;
 	eAlbum auxAlbum ;
@@ -88,9 +88,8 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 			}
 
 			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
-			auxAlbum.codigoAlbum = nuevoId();
+			auxAlbum.codigoAlbum = lugarLibre;
 			Album[lugarLibre] = auxAlbum;
-			Album[lugarLibre].isEmpty = OCUPADO;//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
 			retorno = 1;
 
 		}else{
