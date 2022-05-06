@@ -8210,3 +8210,166 @@ Invoking: GCC C Linker
 gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
 Finished building target: Parcial_1_Laboratorio
  
+19:57:29 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:57:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:59:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:59:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:00:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:00:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:02:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:02:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:09:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:10:00 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:12:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:16:00 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:16:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:18:11 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:18:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:18:18 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:20:51 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:55:7: warning: unused variable ‘auxTituloAlbum’ [-Wunused-variable]
+   55 |  char auxTituloAlbum[51];
+      |       ^~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:20:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:23:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:23:07 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+20:24:09 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:24:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:24:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.

@@ -84,20 +84,15 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 			}
 
 //			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
-			int estadoId ;
-			estadoId = nuevoId();
+			auxAlbum.codigoAlbum = nuevoId();
 
 			while(flag != -1)
 			{
-				if(estadoId == Album[i].codigoAlbum)
+				if((auxAlbum.codigoAlbum == Album[i].codigoAlbum) && Album[i].isEmpty == OCUPADO)
 				{
-						printf("\nId : %d ocupado ", i);
-					if(Album[i].isEmpty == VACIO)
-					{
-						auxAlbum.codigoAlbum = nuevoId();//revisar
-						flag = 0;
 
-					}
+					auxAlbum.codigoAlbum = nuevoId();
+					flag = 0;
 				}
 				i++;
 			}

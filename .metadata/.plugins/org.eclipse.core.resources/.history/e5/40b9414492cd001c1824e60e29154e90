@@ -52,7 +52,7 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 {
 	int retorno = -1;
 	//Album
-	//char auxTituloAlbum[51];
+	char auxTituloAlbum[51];
 	eAlbum auxAlbum ;
 
 	int estadoTitulo = -1;
@@ -83,27 +83,24 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 				estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			}
 
-//			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
-			int estadoId ;
-			estadoId = nuevoId();
+			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
+			auxAlbum.codigoAlbum = nuevoId();
 
 			while(flag != -1)
 			{
-				if(estadoId == Album[i].codigoAlbum)
+				if((auxAlbum.codigoAlbum == Album[i].codigoAlbum) && Album[i].isEmpty == VACIO)
 				{
-						printf("\nId : %d ocupado ", i);
-					if(Album[i].isEmpty == VACIO)
-					{
-						auxAlbum.codigoAlbum = nuevoId();//revisar
-						flag = 0;
 
-					}
+
+				}else{
+					auxAlbum.codigoAlbum = nuevoId();
+					flag = 0;
+
 				}
-				i++;
 			}
-			auxAlbum.isEmpty = OCUPADO;
+
 			Album[lugarLibre] = auxAlbum;
-			//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
+			Album[lugarLibre].isEmpty = OCUPADO;//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
 			retorno = 1;
 
 		}else{

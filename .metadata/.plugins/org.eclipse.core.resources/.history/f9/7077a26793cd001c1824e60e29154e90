@@ -89,15 +89,11 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 
 			while(flag != -1)
 			{
-				if(estadoId == Album[i].codigoAlbum)
+				if((estadoId == Album[i].codigoAlbum) && Album[i].isEmpty == OCUPADO)
 				{
-						printf("\nId : %d ocupado ", i);
-					if(Album[i].isEmpty == VACIO)
-					{
-						auxAlbum.codigoAlbum = nuevoId();//revisar
-						flag = 0;
 
-					}
+					auxAlbum.codigoAlbum = nuevoId();
+					flag = 0;
 				}
 				i++;
 			}

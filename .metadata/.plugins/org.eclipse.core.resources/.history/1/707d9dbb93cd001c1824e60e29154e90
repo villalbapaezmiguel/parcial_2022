@@ -91,10 +91,10 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 			{
 				if(estadoId == Album[i].codigoAlbum)
 				{
-						printf("\nId : %d ocupado ", i);
 					if(Album[i].isEmpty == VACIO)
 					{
-						auxAlbum.codigoAlbum = nuevoId();//revisar
+						printf("\nId : %d ocupado ", i);
+						auxAlbum.codigoAlbum = nuevoId();
 						flag = 0;
 
 					}
