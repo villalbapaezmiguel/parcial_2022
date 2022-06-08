@@ -60,27 +60,49 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 	int estadoImporte = -1;
 	int i = 0;
 	int flag = -1;
+	int estadoCodigoTipoArtista = -1;//
+	int estadoCodigoGenero = -1;//
+	int  estadoCodigoArtitsa = -1;//
 
 	if(Album != NULL && tamAlbum > 0)
 	{
 		if(Album[lugarLibre].isEmpty == VACIO)
 		{
+			//Titulo
 			estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			while ( estadoTitulo == -1)
 			{
 				estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			}
-
+			//FECHA
 			estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
 			while ( estadoFecha == -1)
 			{
 				estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
 			}
-
+			//IMPORTE
 			estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			while ( estadoImporte == -1)
 			{
 				estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
+			}
+			//CODIGO ARTISTA
+			estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+			while ( estadoCodigoArtitsa == -1)
+			{
+				estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+			}
+			//CODIGO GENERO
+			estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+			while ( estadoCodigoGenero == -1)
+			{
+				estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+			}
+			//CODIGO TIPO ARTISTA
+			estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+			while ( estadoCodigoTipoArtista == -1)
+			{
+				estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
 			}
 
 //			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
@@ -279,14 +301,18 @@ int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , fl
 	int contador = 0;
 	int acumulador = 0;
 	int contadorMayorPromedios = 0;
+
 	if(album != NULL && tamAlbum > 0)
 	{
 		for (i = 0; i < tamAlbum; ++i) {
 
-			if(album[i].importe > 0)
+			if(album[i].isEmpty == OCUPADO)
 			{
-				contador++;
-				acumulador += album[i].importe;
+				if(album[i].importe > 0 )
+				{
+					contador++;
+					acumulador += album[i].importe;
+				}
 			}
 		}
 		*promedioImportes = acumulador /contador;
@@ -294,9 +320,12 @@ int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , fl
 
 		for (j = 0; j < tamAlbum; ++j) {
 
-			if(*promedioImportes < album[j].importe)
+			if(album[j].isEmpty == OCUPADO)
 			{
-				contadorMayorPromedios++;
+				if(*promedioImportes < album[j].importe )
+				{
+					contadorMayorPromedios++;
+				}
 			}
 		}
 		*cantidadMayorPromedio = contadorMayorPromedios;
@@ -315,8 +344,9 @@ void informar_Total_Promedio_Cuantos(eAlbum* album , int tamAlbum , int total , 
 
 	if(album != NULL && tamAlbum > 0)
 	{
-
+		printf("\n==========================================================================================");
 		printf("\nTotal : %d || Promedio : %f || Superan el promedio : %d de albumes ", total , promedioImportes , cantidadMayorPromedio);
+		printf("\n==========================================================================================");
 	}
 }
 
@@ -336,24 +366,31 @@ void informarTodoAlbum (eAlbum* album , int tamAlbum )
 int cantidadAlbumesFecha(eAlbum* album , int tamAlbum , int* cantidad )
 {
 	int estado = -1;
-	int i , j;
+	int i ;
 	int contador = 0;
 
 	if(album != NULL && tamAlbum > 0)
 	{
-		for (i = 0; i < tamAlbum; ++i) {
+		for (i = 0; i < tamAlbum; ++i)
+		{
 
 			if(album[i].isEmpty == OCUPADO)
 			{
 				estado = 1;
-				for (j = 0; j < tamAlbum; ++j) {
-
-					if(album[j].fecha.anio < 2000 )
-					{
-						contador ++;
-						break ;
-					}
+				if(album[i].fecha.anio < 2000)
+				{
+					contador ++;
 				}
+
+
+//				for (j = 0; j < tamAlbum; ++j) {
+//
+//					if(album[j].fecha.anio < 2000 )
+//					{
+//						contador ++;
+//						break ;
+//					}
+//				}
 			}
 		}
 
@@ -372,15 +409,11 @@ void menu( eAlbum* eAlbum , int tamAlbum )
 	int auxCodigoBuscado;
 	int auxCodigoBaja;
 
-	int auxTotal ;
-	float auxPromedio ;
-	int auxCantidad;
-	int auxCantidadFecha ;
-
 	altaForzada(eAlbum, tamAlbum, 0, "Miguel", 10, 12, 2001, 200);
 	altaForzada(eAlbum, tamAlbum, 1, "Alexis", 8, 6, 2001, 1200);
 	altaForzada(eAlbum, tamAlbum, 2, "Oscar", 4, 4, 1999, 3200);
-	altaForzada(eAlbum, tamAlbum, 3, "Adrian", 18, 11, 1996, 5200);
+	altaForzada(eAlbum, tamAlbum, 3, "Abel", 22, 3, 1996, 6200);
+	altaForzada(eAlbum, tamAlbum, 4, "Adrian", 18, 11, 1996, 5200);
 	do {
 		printf("\n1) ALTA \n2) MODIFICACION \n3) BAJA \n4) INFORMAR \n5) LISTAR \n6)SALIR");
 		printf("\nIngrese algo : ");
@@ -414,18 +447,9 @@ void menu( eAlbum* eAlbum , int tamAlbum )
 				}
 				break;
 			case 4:
-				printf("\nINFORMAR");
-					//crear un subMenu
-					//A
-					if(calcularTotalPromedioCantidad(eAlbum, tamAlbum, &auxTotal, &auxPromedio, &auxCantidad) == 1)
-					{
-						informar_Total_Promedio_Cuantos(eAlbum, tamAlbum, auxTotal, auxPromedio, auxCantidad);
-					}
-					//B
-					if(cantidadAlbumesFecha(eAlbum, tamAlbum, &auxCantidadFecha)== 1)
-					{
-						printf("\nLA Cantidad de álbumes cuya fecha de publicación es anterior a 1/1/2000 es de : %d", auxCantidadFecha);
-					}
+				printf("\n-------------------INFORMAR------------------------------------");
+
+				subMenuInformar(eAlbum, tamAlbum);
 
 				break;
 			case 5:
@@ -520,4 +544,40 @@ int bajaSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBaja)
 	return estado ;
 }
 
+void subMenuInformar(eAlbum* eAlbum, int tamAlbum)
+{
+	int auxTotal ;
+	float auxPromedio;
+	int auxCantidad;
+	int opcionInformar;
+	int auxCantidadFecha;
+	do {
+		printf("\n1) Total y promedio de los importes, y cuántos álbumes superan ese promedio");
+		printf("\n2) La cantidad de álbumes cuya fecha de publicación es menor a 1/1/2000.");
+		printf("\n3) Salir de Informar");
+		utn_pedirInt(&opcionInformar, "\nIngrese una opcion :", "\nERROR", 1, 3, 2);
+		switch(opcionInformar)
+		{
+			case 1://A. Total y promedio de los importes, y cuántos álbumes superan ese promedio.
+				if(calcularTotalPromedioCantidad(eAlbum, tamAlbum, &auxTotal, &auxPromedio, &auxCantidad) == 1)
+				{
+
+					informar_Total_Promedio_Cuantos(eAlbum, tamAlbum, auxTotal, auxPromedio, auxCantidad);
+				}
+
+				break;
+			case 2://B. Cantidad de álbumes cuya fecha de publicación es anterior a 1/1/2000.
+				if(cantidadAlbumesFecha(eAlbum, tamAlbum, &auxCantidadFecha)== 1)
+				{
+					printf("\n==========================================================================================");
+					printf("\nLA Cantidad de álbumes cuya fecha de publicación es anterior a 1/1/2000 es de : %d", auxCantidadFecha);
+					printf("\n==========================================================================================");
+				}
+
+				break;
+		}
+
+
+	} while (opcionInformar != 3);
+}
 

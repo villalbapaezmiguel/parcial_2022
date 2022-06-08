@@ -19,6 +19,7 @@
 #include <ctype.h>
 #include <math.h>
 #include "utn.h"
+#include "Listar.h"
 
 //tipo artista
 #define SOLISTA 1
@@ -56,9 +57,9 @@ typedef struct{
 	char titulo [51];
 	eFecha fecha ;
 	int importe ;
-	int idArtista ;
-	int idTipoArtista ;
-	int idGenero;
+	int codigoArtista ;
+	int codigoTipoArtista ;
+	int codigoGenero;
 	int isEmpty ;
 }eAlbum;
 //abm
@@ -76,6 +77,7 @@ void informar_Total_Promedio_Cuantos(eAlbum* album , int tamAlbum , int total , 
 int cantidadAlbumesFecha(eAlbum* album , int tamAlbum , int* cantidad );
 //menu
 void menu( eAlbum* eAlbum , int tamAlbum );
+void subMenuInformar(eAlbum* eAlbum, int tamAlbum);
 //Simplificacion ABM
 int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int* auxIndice);
 int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );

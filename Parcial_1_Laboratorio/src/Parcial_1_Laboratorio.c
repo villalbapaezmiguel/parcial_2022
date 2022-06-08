@@ -15,6 +15,7 @@
 #include <math.h>
 #include "utn.h"
 #include "Albumes.h"
+#include "Listar.h"
 
 #define CANTIDAD 10
 int main(void) {

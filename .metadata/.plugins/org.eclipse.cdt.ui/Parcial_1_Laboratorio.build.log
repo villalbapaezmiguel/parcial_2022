@@ -1,6 +1,15 @@
-20:24:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+21:46:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
 make all 
-make: No se hace nada para 'all'.
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+Finished building: ../src/Listar.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
 
-20:25:00 Build Finished. 0 errors, 0 warnings. (took 467ms)
+21:46:59 Build Finished. 0 errors, 0 warnings. (took 516ms)
 

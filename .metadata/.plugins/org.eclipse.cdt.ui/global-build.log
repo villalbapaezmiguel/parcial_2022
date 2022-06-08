@@ -8373,3 +8373,742 @@ Finished building target: Parcial_1_Laboratorio
 20:24:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
 make all 
 make: No se hace nada para 'all'.
+16:56:50 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:03:31 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:03:52 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:13:24 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:14:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:14:40 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+17:16:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:419:9: warning: ‘opcionInformar’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  419 |     int opcionInformar ;
+      |         ^~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+17:17:18 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:381:6: warning: ‘opcionInformar’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  381 |  int opcionInformar ;
+      |      ^~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:51:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+18:54:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+18:54:53 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:381:6: warning: ‘opcionInformar’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  381 |  int opcionInformar ;
+      |      ^~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:58:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:426:19: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  426 |      utn_pedirInt(opcionInformar, "\nIngrese una opcion :", "\nERROR", 1, 2, 2);
+      |                   ^~~~~~~~~~~~~~
+      |                   |
+      |                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:426:6: warning: ‘opcionInformar’ may be used uninitialized in this function [-Wmaybe-uninitialized]
+  426 |      utn_pedirInt(opcionInformar, "\nIngrese una opcion :", "\nERROR", 1, 2, 2);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:59:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+18:59:28 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+18:59:29 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:01:00 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:01:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:01:38 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:01:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:04:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:07:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:07:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:11:43 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:11:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:13:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘calcularTotalPromedioCantidad’:
+../src/Albumes.c:303:25: warning: comparison between pointer and integer
+  303 |     if(promedioImportes < album[j].importe )
+      |                         ^
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:13:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:15:39 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:17:00 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:17:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:17:29 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:17:31 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:19:17 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:21:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘cantidadAlbumesFecha’:
+../src/Albumes.c:367:4: error: expected expression before ‘}’ token
+  367 |    }
+      |    ^
+../src/Albumes.c:346:10: warning: unused variable ‘j’ [-Wunused-variable]
+  346 |  int i , j;
+      |          ^
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:21:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘cantidadAlbumesFecha’:
+../src/Albumes.c:367:4: error: expected expression before ‘}’ token
+  367 |    }
+      |    ^
+../src/Albumes.c:346:10: warning: unused variable ‘j’ [-Wunused-variable]
+  346 |  int i , j;
+      |          ^
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:21:57 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘cantidadAlbumesFecha’:
+../src/Albumes.c:346:10: warning: unused variable ‘j’ [-Wunused-variable]
+  346 |  int i , j;
+      |          ^
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:22:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:22:33 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:22:34 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:23:24 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:23:27 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:23:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:23:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:28:20 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:28:22 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:29:24 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:29:31 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:30:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:30:05 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:35:04 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘subMenuInformar’:
+../src/Albumes.c:573:56: warning: passing argument 3 of ‘calcularTotalPromedioCantidad’ from incompatible pointer type [-Wincompatible-pointer-types]
+  573 |     if(calcularTotalPromedioCantidad(eAlbum, tamAlbum, &auxTotal, &auxPromedio, &auxCantidad) == 1)
+      |                                                        ^~~~~~~~~
+      |                                                        |
+      |                                                        int **
+../src/Albumes.c:275:71: note: expected ‘int *’ but argument is of type ‘int **’
+  275 | int calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportes , int* cantidadMayorPromedio)
+      |                                                                  ~~~~~^~~~~
+../src/Albumes.c:573:67: warning: passing argument 4 of ‘calcularTotalPromedioCantidad’ from incompatible pointer type [-Wincompatible-pointer-types]
+  573 |     if(calcularTotalPromedioCantidad(eAlbum, tamAlbum, &auxTotal, &auxPromedio, &auxCantidad) == 1)
+      |                                                                   ^~~~~~~~~~~~
+      |                                                                   |
+      |                                                                   float **
+../src/Albumes.c:275:86: note: expected ‘float *’ but argument is of type ‘float **’
+  275 | int calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportes , int* cantidadMayorPromedio)
+      |                                                                               ~~~~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c:573:81: warning: passing argument 5 of ‘calcularTotalPromedioCantidad’ from incompatible pointer type [-Wincompatible-pointer-types]
+  573 |     if(calcularTotalPromedioCantidad(eAlbum, tamAlbum, &auxTotal, &auxPromedio, &auxCantidad) == 1)
+      |                                                                                 ^~~~~~~~~~~~
+      |                                                                                 |
+      |                                                                                 int **
+../src/Albumes.c:275:110: note: expected ‘int *’ but argument is of type ‘int **’
+  275 | int calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportes , int* cantidadMayorPromedio)
+      |                                                                                                         ~~~~~^~~~~~~~~~~~~~~~~~~~~
+../src/Albumes.c:576:56: warning: passing argument 3 of ‘informar_Total_Promedio_Cuantos’ makes integer from pointer without a cast [-Wint-conversion]
+  576 |      informar_Total_Promedio_Cuantos(eAlbum, tamAlbum, auxTotal, auxPromedio, auxCantidad);
+      |                                                        ^~~~~~~~
+      |                                                        |
+      |                                                        int *
+../src/Albumes.c:320:73: note: expected ‘int’ but argument is of type ‘int *’
+  320 | void informar_Total_Promedio_Cuantos(eAlbum* album , int tamAlbum , int total , float promedioImportes , int cantidadMayorPromedio)
+      |                                                                     ~~~~^~~~~
+../src/Albumes.c:576:66: error: incompatible type for argument 4 of ‘informar_Total_Promedio_Cuantos’
+  576 |      informar_Total_Promedio_Cuantos(eAlbum, tamAlbum, auxTotal, auxPromedio, auxCantidad);
+      |                                                                  ^~~~~~~~~~~
+      |                                                                  |
+      |                                                                  float *
+../src/Albumes.c:320:87: note: expected ‘float’ but argument is of type ‘float *’
+  320 | void informar_Total_Promedio_Cuantos(eAlbum* album , int tamAlbum , int total , float promedioImportes , int cantidadMayorPromedio)
+      |                                                                                 ~~~~~~^~~~~~~~~~~~~~~~
+../src/Albumes.c:576:79: warning: passing argument 5 of ‘informar_Total_Promedio_Cuantos’ makes integer from pointer without a cast [-Wint-conversion]
+  576 |      informar_Total_Promedio_Cuantos(eAlbum, tamAlbum, auxTotal, auxPromedio, auxCantidad);
+      |                                                                               ^~~~~~~~~~~
+      |                                                                               |
+      |                                                                               int *
+../src/Albumes.c:320:110: note: expected ‘int’ but argument is of type ‘int *’
+  320 | void informar_Total_Promedio_Cuantos(eAlbum* album , int tamAlbum , int total , float promedioImportes , int cantidadMayorPromedio)
+      |                                                                                                          ~~~~^~~~~~~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:26: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+19:35:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:35:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:395:6: warning: unused variable ‘opcionInformar’ [-Wunused-variable]
+  395 |  int opcionInformar ;
+      |      ^~~~~~~~~~~~~~
+../src/Albumes.c:393:6: warning: unused variable ‘auxCantidadFecha’ [-Wunused-variable]
+  393 |  int auxCantidadFecha ;
+      |      ^~~~~~~~~~~~~~~~
+../src/Albumes.c:392:6: warning: unused variable ‘auxCantidad’ [-Wunused-variable]
+  392 |  int auxCantidad;
+      |      ^~~~~~~~~~~
+../src/Albumes.c:391:8: warning: unused variable ‘auxPromedio’ [-Wunused-variable]
+  391 |  float auxPromedio ;
+      |        ^~~~~~~~~~~
+../src/Albumes.c:390:6: warning: unused variable ‘auxTotal’ [-Wunused-variable]
+  390 |  int auxTotal ;
+      |      ^~~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:36:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+19:36:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+make: No se hace nada para 'all'.
+19:39:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+Finished building: ../src/Listar.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building file: ../src/utn.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/utn.d" -MT"src/utn.o" -o "src/utn.o" "../src/utn.c"
+Finished building: ../src/utn.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:44:08 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:90:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   90 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:93:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   93 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:96:46: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   96 |    estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                      ~~~~~~~~^~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:99:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   99 |     estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:102:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  102 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:105:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  105 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+../src/Listar.c: In function ‘ListarGeneros’:
+../src/Listar.c:19:17: error: subscripted value is neither array nor pointer nor vector
+   19 |    if(listaAlbum[i].isEmpty == OCUPADO)
+      |                 ^
+../src/Listar.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+make: *** [src/subdir.mk:29: src/Listar.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+../src/Listar.c: In function ‘ListarGeneros’:
+../src/Listar.c:19:17: error: subscripted value is neither array nor pointer nor vector
+   19 |    if(listaAlbum[i].isEmpty == OCUPADO)
+      |                 ^
+../src/Listar.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+make: *** [src/subdir.mk:29: src/Listar.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+../src/Listar.c: In function ‘ListarGeneros’:
+../src/Listar.c:19:18: error: subscripted value is neither array nor pointer nor vector
+   19 |    if(&listaAlbum[i].isEmpty == OCUPADO)
+      |                  ^
+../src/Listar.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+make: *** [src/subdir.mk:29: src/Listar.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:44:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+../src/Listar.c: In function ‘ListarGeneros’:
+../src/Listar.c:19:17: error: subscripted value is neither array nor pointer nor vector
+   19 |    if(listaAlbum[i].isEmpty == OCUPADO)
+      |                 ^
+../src/Listar.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+make: *** [src/subdir.mk:29: src/Listar.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:45:01 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+../src/Listar.c: In function ‘ListarGeneros’:
+../src/Listar.c:30:1: warning: control reaches end of non-void function [-Wreturn-type]
+   30 | }
+      | ^
+Finished building: ../src/Listar.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:46:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+../src/Listar.c: In function ‘ListarGeneros’:
+../src/Listar.c:28:1: warning: control reaches end of non-void function [-Wreturn-type]
+   28 | }
+      | ^
+Finished building: ../src/Listar.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:46:59 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+Finished building: ../src/Listar.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
