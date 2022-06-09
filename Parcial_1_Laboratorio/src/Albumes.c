@@ -48,12 +48,17 @@ int buscarLugarLibre(eAlbum* album , int tamAlbum , int* lugarLibre)
 	return retorno;
 }
 
-int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
+int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero ,int tamGenero,  eTipoArtista* TipoArtista ,int tamTipoArtista, eArtista* Artista ,int tamArtista)
 {
 	int retorno = -1;
 	//Album
 	//char auxTituloAlbum[51];
 	eAlbum auxAlbum ;
+	eGenero auxGenero ;
+	eTipoArtista auxTipoArtista ;
+	eArtista auxArtista ;
+
+
 
 	int estadoTitulo = -1;
 	int estadoFecha = -1;
@@ -68,42 +73,64 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 	{
 		if(Album[lugarLibre].isEmpty == VACIO)
 		{
-			//Titulo
+			//Titulo-----------------------------------------------
 			estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			while ( estadoTitulo == -1)
 			{
 				estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
 			}
-			//FECHA
+			//FECHA---------------------------------------------
 			estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
 			while ( estadoFecha == -1)
 			{
 				estadoFecha = utn_fecha(&auxAlbum.fecha.dia, &auxAlbum.fecha.mes, &auxAlbum.fecha.anio);
 			}
-			//IMPORTE
+			//IMPORTE-------------------------------------------
 			estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			while ( estadoImporte == -1)
 			{
 				estadoImporte = utn_pedirInt(&auxAlbum.importe, "\nIngrese Importe del Album :", "\nERROR ", 1, 100000, 2);
 			}
-			//CODIGO ARTISTA
-			estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+			//CODIGO ARTISTA---------------------------------------
+			estadoCodigoArtitsa = utn_pedirInt(&auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
 			while ( estadoCodigoArtitsa == -1)
 			{
-				estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+				estadoCodigoArtitsa = utn_pedirInt(&auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
 			}
-			//CODIGO GENERO
-			estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+			estadoCodigoArtitsa = utn_pedirChar(auxArtista.nombreArtista, "\nIngrese nombre del Artista :", "\nERROR", 51, 2);
+			while ( estadoCodigoArtitsa == -1)
+			{
+				estadoCodigoArtitsa = utn_pedirChar(auxArtista.nombreArtista, "\nIngrese nombre del Artista :", "\nERROR", 51, 2);
+			}
+
+
+			//CODIGO GENERO--------------------------------------
+			estadoCodigoGenero = utn_pedirInt(&auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
 			while ( estadoCodigoGenero == -1)
 			{
-				estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+				estadoCodigoGenero = utn_pedirInt(&auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
 			}
-			//CODIGO TIPO ARTISTA
-			estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+			estadoCodigoGenero = utn_pedirChar(auxGenero.descripcion, "\nIngrese la descripcion del Genero :", "\nERROR", 51, 2);
+			while ( estadoCodigoGenero == -1)
+			{
+				estadoCodigoGenero = utn_pedirChar(auxGenero.descripcion, "\nIngrese la descripcion del Genero :", "\nERROR", 51, 2);
+			}
+
+
+			//CODIGO TIPO ARTISTA --------------------------------------------------
+			estadoCodigoTipoArtista = utn_pedirInt(&auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
 			while ( estadoCodigoTipoArtista == -1)
 			{
-				estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+				estadoCodigoTipoArtista = utn_pedirInt(&auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
 			}
+			printf("\nTIPOS DE ARISTAS : \n 1) Solista \n2) Banda");
+			estadoCodigoTipoArtista = utn_pedirInt(&auxTipoArtista.tipoArtista , "\nIngrese tipo Artista :", "\nERROR", 1, 2, 2);
+			while ( estadoCodigoTipoArtista == -1)
+			{
+				printf("\nTIPOS DE ARISTAS : \n 1) Solista \n2) Banda");
+				estadoCodigoTipoArtista = utn_pedirInt(&auxTipoArtista.tipoArtista , "\nIngrese tipo Artista :", "\nERROR", 1, 2, 2);
+			}
+
 
 //			strncpy(auxAlbum.titulo , auxTituloAlbum , sizeof(auxAlbum.titulo));
 			int estadoId ;
@@ -123,6 +150,14 @@ int alta(eAlbum* Album , int tamAlbum , int lugarLibre)
 				}
 				i++;
 			}
+			auxAlbum.codigoArtista = auxArtista.codigoArtista;
+			auxAlbum.codigoGenero = auxGenero.codigoGenero ;
+			auxAlbum.codigoTipoArtista = auxTipoArtista.codigoArtista ;
+
+			Artista[lugarLibre] = auxArtista;
+			Genero[lugarLibre] = auxGenero ;
+			TipoArtista[lugarLibre] = auxTipoArtista;
+
 			auxAlbum.isEmpty = OCUPADO;
 			Album[lugarLibre] = auxAlbum;
 			//ya lo pudimos agregar , ahora no  nos muestran los datos y el id se repite
@@ -275,7 +310,10 @@ int baja(eAlbum* eAlbum , int tamAlbum , int* codigo)
 	return estado;
 }
 
-void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe)
+void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe ,
+		eGenero* genero , int tamGenero , int codigoGenero , char* descripcionGenero ,
+		eTipoArtista* tipoArtista , int tamTipoArtista , int tiposDeArtistas , int codigoTipoArtista , char* descripcionTipoArtista,
+		eArtista* artista , int tamArtista , int codigoArtista , char* nombreArtista )
 {
 	eAlbum auxAlbum ;
 
@@ -290,6 +328,7 @@ void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia ,
 	auxAlbum.codigoAlbum = id ;
 	auxAlbum.isEmpty = OCUPADO;
 	album[id] = auxAlbum ;
+	//cargar los datos de genero , tipo artista y artista
 
 }
 
@@ -401,7 +440,7 @@ int cantidadAlbumesFecha(eAlbum* album , int tamAlbum , int* cantidad )
 }
 
 //Menu--------------
-void menu( eAlbum* eAlbum , int tamAlbum )
+void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , int tamGenero , eTipoArtista* tipoArtista , int tamTipoArtista , eArtista* artista, int tamArtista )
 {
 	int opciones ;
 	int auxLugarLibre ;
@@ -409,11 +448,11 @@ void menu( eAlbum* eAlbum , int tamAlbum )
 	int auxCodigoBuscado;
 	int auxCodigoBaja;
 
-	altaForzada(eAlbum, tamAlbum, 0, "Miguel", 10, 12, 2001, 200);
-	altaForzada(eAlbum, tamAlbum, 1, "Alexis", 8, 6, 2001, 1200);
-	altaForzada(eAlbum, tamAlbum, 2, "Oscar", 4, 4, 1999, 3200);
-	altaForzada(eAlbum, tamAlbum, 3, "Abel", 22, 3, 1996, 6200);
-	altaForzada(eAlbum, tamAlbum, 4, "Adrian", 18, 11, 1996, 5200);
+	altaForzada(eAlbum, tamAlbum, 0, "Miguel", 10, 12, 2001, 200 , genero , tamGenero , 0 , "codigoArista", tipoArtista , tamTipoArtista , 1 , 0 , "descripcion tipos artista", artista , tamArtista, 0 , "SoyElNombreDelArtista" );
+//	altaForzada(eAlbum, tamAlbum, 1, "Alexis", 8, 6, 2001, 1200);
+//	altaForzada(eAlbum, tamAlbum, 2, "Oscar", 4, 4, 1999, 3200);
+//	altaForzada(eAlbum, tamAlbum, 3, "Abel", 22, 3, 1996, 6200);
+//	altaForzada(eAlbum, tamAlbum, 4, "Adrian", 18, 11, 1996, 5200);
 	do {
 		printf("\n1) ALTA \n2) MODIFICACION \n3) BAJA \n4) INFORMAR \n5) LISTAR \n6)SALIR");
 		printf("\nIngrese algo : ");
@@ -423,7 +462,8 @@ void menu( eAlbum* eAlbum , int tamAlbum )
 		{
 			case 1:
 				printf("\n-----------------Alta-------------------------------");
-				if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+
+				if( altaSimplificada(eAlbum, tamAlbum, genero, tamGenero , tipoArtista , tamTipoArtista, artista , tamArtista, &auxLugarLibre, &auxindice) == 1)
 				{
 					printf("\nAlta finalizada");
 
@@ -467,7 +507,7 @@ void menu( eAlbum* eAlbum , int tamAlbum )
 
 //alta simplificado
 
-int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int *auxIndice )
+int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice )
 {
 	int estado = -1;
 
@@ -475,7 +515,8 @@ int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int *aux
 	{
 		if(buscarLugarLibre(album, tamAlbum, *&auxLugarLibre) == 1)
 		{
-			if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+
+			if(alta(album, tamAlbum, *auxLugarLibre, genero, tamGenero, tipoArtista , tamTipoArtista, artista, tamArtista) == 1)
 			{
 				estado = 1;
 				printf("\nFin del Alta");

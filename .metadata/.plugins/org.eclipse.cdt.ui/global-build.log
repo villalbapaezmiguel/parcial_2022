@@ -9112,3 +9112,1355 @@ Invoking: GCC C Linker
 gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
 Finished building target: Parcial_1_Laboratorio
  
+20:28:12 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:51:5: error: conflicting types for ‘alta’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* eGenero , eTipoArtista* eTipoArtista , eArtista* artista )
+      |     ^~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:68:5: note: previous declaration of ‘alta’ was here
+   68 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre);
+      |     ^~~~
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:57:2: warning: statement with no effect [-Wunused-value]
+   57 |  eGenero auxGenero ;
+      |  ^~~~~~~
+../src/Albumes.c:57:9: error: expected ‘;’ before ‘auxGenero’
+   57 |  eGenero auxGenero ;
+      |         ^~~~~~~~~~
+      |         ;
+../src/Albumes.c:92:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:95:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:46: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |    estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                      ~~~~~~~~^~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:101:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  101 |     estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:104:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  104 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:107:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  107 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:480:7: error: too few arguments to function ‘alta’
+  480 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* eGenero , eTipoArtista* eTipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:28:58 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:57:2: warning: statement with no effect [-Wunused-value]
+   57 |  eGenero auxGenero ;
+      |  ^~~~~~~
+../src/Albumes.c:57:9: error: expected ‘;’ before ‘auxGenero’
+   57 |  eGenero auxGenero ;
+      |         ^~~~~~~~~~
+      |         ;
+../src/Albumes.c:92:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:95:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:46: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |    estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                      ~~~~~~~~^~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:101:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  101 |     estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:104:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  104 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:107:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  107 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:480:7: error: too few arguments to function ‘alta’
+  480 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* eGenero , eTipoArtista* eTipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:29:55 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:60:2: error: two or more data types in declaration specifiers
+   60 |  int estadoTitulo = -1;
+      |  ^~~
+../src/Albumes.c:60:21: error: invalid initializer
+   60 |  int estadoTitulo = -1;
+      |                     ^
+../src/Albumes.c:74:19: error: incompatible types when assigning to type ‘eGenero’ {aka ‘struct <anonymous>’} from type ‘int’
+   74 |    estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
+      |                   ^~~~~~~~~~~~~
+../src/Albumes.c:75:25: error: invalid operands to binary == (have ‘eGenero’ {aka ‘struct <anonymous>’} and ‘int’)
+   75 |    while ( estadoTitulo == -1)
+      |                         ^~
+../src/Albumes.c:77:20: error: incompatible types when assigning to type ‘eGenero’ {aka ‘struct <anonymous>’} from type ‘int’
+   77 |     estadoTitulo = utn_pedirChar(auxAlbum.titulo , "\nIngrese el nombre del Titulo :", "\nERROR ", 51, 2);
+      |                    ^~~~~~~~~~~~~
+../src/Albumes.c:92:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:95:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:46: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |    estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                      ~~~~~~~~^~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:101:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  101 |     estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:104:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  104 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:107:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  107 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:480:7: error: too few arguments to function ‘alta’
+  480 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:30:14 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:92:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   92 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:95:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:46: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |    estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                      ~~~~~~~~^~~~~~~~~~~~~
+      |                                              |
+      |                                              int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:101:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  101 |     estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:104:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  104 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:107:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  107 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:57:10: warning: unused variable ‘eGenero’ [-Wunused-variable]
+   57 |  eGenero eGenero ;
+      |          ^~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:480:7: error: too few arguments to function ‘alta’
+  480 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:33:29 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:95:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:100:40: error: incompatible type for argument 1 of ‘utn_pedirChar’
+  100 |    estadoCodigoArtitsa = utn_pedirChar(auxArtista, "\nIngrese nombre del Artista :", "\nERROR", 51, 2);
+      |                                        ^~~~~~~~~~
+      |                                        |
+      |                                        eArtista {aka struct <anonymous>}
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:16:25: note: expected ‘char *’ but argument is of type ‘eArtista’ {aka ‘struct <anonymous>’}
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones);
+      |                   ~~~~~~^~~~~~
+../src/Albumes.c:103:41: error: incompatible type for argument 1 of ‘utn_pedirChar’
+  103 |     estadoCodigoArtitsa = utn_pedirChar(auxArtista, "\nIngrese nombre del Artista :", "\nERROR", 51, 2);
+      |                                         ^~~~~~~~~~
+      |                                         |
+      |                                         eArtista {aka struct <anonymous>}
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:16:25: note: expected ‘char *’ but argument is of type ‘eArtista’ {aka ‘struct <anonymous>’}
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones);
+      |                   ~~~~~~^~~~~~
+../src/Albumes.c:110:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  110 |     estadoCodigoGenero = utn_pedirInt(auxAlbum.codigoGenero, "\nIngrese codigo del Genero :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:113:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:116:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  116 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:58:15: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   58 |  eTipoArtista auxTipoArtista ;
+      |               ^~~~~~~~~~~~~~
+../src/Albumes.c:57:10: warning: unused variable ‘auxGenero’ [-Wunused-variable]
+   57 |  eGenero auxGenero ;
+      |          ^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:489:7: error: too few arguments to function ‘alta’
+  489 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:33:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:95:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:100:40: error: incompatible type for argument 1 of ‘utn_pedirChar’
+  100 |    estadoCodigoArtitsa = utn_pedirChar(auxArtista, "\nIngrese nombre del Artista :", "\nERROR", 51, 2);
+      |                                        ^~~~~~~~~~
+      |                                        |
+      |                                        eArtista {aka struct <anonymous>}
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:16:25: note: expected ‘char *’ but argument is of type ‘eArtista’ {aka ‘struct <anonymous>’}
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones);
+      |                   ~~~~~~^~~~~~
+../src/Albumes.c:103:41: error: incompatible type for argument 1 of ‘utn_pedirChar’
+  103 |     estadoCodigoArtitsa = utn_pedirChar(auxArtista, "\nIngrese nombre del Artista :", "\nERROR", 51, 2);
+      |                                         ^~~~~~~~~~
+      |                                         |
+      |                                         eArtista {aka struct <anonymous>}
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:16:25: note: expected ‘char *’ but argument is of type ‘eArtista’ {aka ‘struct <anonymous>’}
+   16 | int utn_pedirChar(char *pLetra , char *mensaje , char *mensajeError, int largo , int repeticiones);
+      |                   ~~~~~~^~~~~~
+../src/Albumes.c:113:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:116:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  116 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:58:15: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   58 |  eTipoArtista auxTipoArtista ;
+      |               ^~~~~~~~~~~~~~
+../src/Albumes.c:57:10: warning: unused variable ‘auxGenero’ [-Wunused-variable]
+   57 |  eGenero auxGenero ;
+      |          ^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:489:7: error: too few arguments to function ‘alta’
+  489 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:33:49 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:95:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:113:51: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  113 |    estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                           ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                   |
+      |                                                   int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:116:52: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  116 |     estadoCodigoTipoArtista = utn_pedirInt(auxAlbum.codigoTipoArtista, "\nIngrese codigo del Tipo de artista :", "\nERROR",0, 10000, 2);
+      |                                            ~~~~~~~~^~~~~~~~~~~~~~~~~~
+      |                                                    |
+      |                                                    int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:58:15: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   58 |  eTipoArtista auxTipoArtista ;
+      |               ^~~~~~~~~~~~~~
+../src/Albumes.c:57:10: warning: unused variable ‘auxGenero’ [-Wunused-variable]
+   57 |  eGenero auxGenero ;
+      |          ^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:489:7: error: too few arguments to function ‘alta’
+  489 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:34:13 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:95:47: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   95 |    estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                       ~~~~~~~~^~~~~~~~~~~~~~
+      |                                               |
+      |                                               int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:98:48: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+   98 |     estadoCodigoArtitsa = utn_pedirInt(auxAlbum.codigoArtista, "\nIngrese codigo del artista :", "\nERROR",0, 10000, 2);
+      |                                        ~~~~~~~~^~~~~~~~~~~~~~
+      |                                                |
+      |                                                int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:58:15: warning: unused variable ‘auxTipoArtista’ [-Wunused-variable]
+   58 |  eTipoArtista auxTipoArtista ;
+      |               ^~~~~~~~~~~~~~
+../src/Albumes.c:57:10: warning: unused variable ‘auxGenero’ [-Wunused-variable]
+   57 |  eGenero auxGenero ;
+      |          ^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:489:7: error: too few arguments to function ‘alta’
+  489 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:36:42 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:119:57: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  119 |    estadoCodigoTipoArtista = utn_pedirInt(auxTipoArtista.tipoArtista , "\nIngrese tipo Artista :", "\nERROR", 1, 2, 2);
+      |                                           ~~~~~~~~~~~~~~^~~~~~~~~~~~
+      |                                                         |
+      |                                                         int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:123:58: warning: passing argument 1 of ‘utn_pedirInt’ makes pointer from integer without a cast [-Wint-conversion]
+  123 |     estadoCodigoTipoArtista = utn_pedirInt(auxTipoArtista.tipoArtista , "\nIngrese tipo Artista :", "\nERROR", 1, 2, 2);
+      |                                            ~~~~~~~~~~~~~~^~~~~~~~~~~~
+      |                                                          |
+      |                                                          int
+In file included from ../src/Albumes.h:21,
+                 from ../src/Albumes.c:8:
+../src/utn.h:17:23: note: expected ‘int *’ but argument is of type ‘int’
+   17 | int utn_pedirInt(int *pNumero , char *mensaje , char *mensajeError, int minimo , int maximo , int repeticiones);
+      |                  ~~~~~^~~~~~~
+../src/Albumes.c:57:10: warning: unused variable ‘auxGenero’ [-Wunused-variable]
+   57 |  eGenero auxGenero ;
+      |          ^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:497:7: error: too few arguments to function ‘alta’
+  497 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:37:23 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:57:10: warning: unused variable ‘auxGenero’ [-Wunused-variable]
+   57 |  eGenero auxGenero ;
+      |          ^~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:497:7: error: too few arguments to function ‘alta’
+  497 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:39:29 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:505:7: error: too few arguments to function ‘alta’
+  505 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:40:46 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:497:5: error: conflicting types for ‘altaSimplificada’
+  497 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice )
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: previous declaration of ‘altaSimplificada’ was here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int* auxIndice);
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:506:7: error: too few arguments to function ‘alta’
+  506 |    if(alta(album, tamAlbum, *auxLugarLibre ) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:41:30 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:497:5: error: conflicting types for ‘altaSimplificada’
+  497 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice )
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: previous declaration of ‘altaSimplificada’ was here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,int* auxLugarLibre , int* auxIndice);
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:506:44: error: ‘Genero’ undeclared (first use in this function); did you mean ‘genero’?
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, TipoArtista, artista) == 1)
+      |                                            ^~~~~~
+      |                                            genero
+../src/Albumes.c:506:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/Albumes.c:506:52: error: ‘TipoArtista’ undeclared (first use in this function); did you mean ‘tipoArtista’?
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, TipoArtista, artista) == 1)
+      |                                                    ^~~~~~~~~~~
+      |                                                    tipoArtista
+../src/Albumes.c:506:29: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, TipoArtista, artista) == 1)
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             int *
+../src/Albumes.c:51:45: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |                                         ~~~~^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:41:45 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:453:43: warning: passing argument 3 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                           ^~~~~~~~~~~~~~
+      |                                           |
+      |                                           int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:61: note: expected ‘eGenero *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                    ~~~~~~~~~^~~~~~
+../src/Albumes.c:453:60: warning: passing argument 4 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                                            ^~~~~~~~~~
+      |                                                            |
+      |                                                            int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:84: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:453:8: error: too few arguments to function ‘altaSimplificada’
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:506:44: error: ‘Genero’ undeclared (first use in this function); did you mean ‘genero’?
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, TipoArtista, artista) == 1)
+      |                                            ^~~~~~
+      |                                            genero
+../src/Albumes.c:506:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/Albumes.c:506:52: error: ‘TipoArtista’ undeclared (first use in this function); did you mean ‘tipoArtista’?
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, TipoArtista, artista) == 1)
+      |                                                    ^~~~~~~~~~~
+      |                                                    tipoArtista
+../src/Albumes.c:506:29: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, TipoArtista, artista) == 1)
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             int *
+../src/Albumes.c:51:45: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |                                         ~~~~^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:42:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:453:43: warning: passing argument 3 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                           ^~~~~~~~~~~~~~
+      |                                           |
+      |                                           int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:61: note: expected ‘eGenero *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                    ~~~~~~~~~^~~~~~
+../src/Albumes.c:453:60: warning: passing argument 4 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                                            ^~~~~~~~~~
+      |                                                            |
+      |                                                            int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:84: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:453:8: error: too few arguments to function ‘altaSimplificada’
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:506:44: error: ‘Genero’ undeclared (first use in this function); did you mean ‘genero’?
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, tipoArtista, artista) == 1)
+      |                                            ^~~~~~
+      |                                            genero
+../src/Albumes.c:506:44: note: each undeclared identifier is reported only once for each function it appears in
+../src/Albumes.c:506:29: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, Genero, tipoArtista, artista) == 1)
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             int *
+../src/Albumes.c:51:45: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |                                         ~~~~^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:42:16 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:453:43: warning: passing argument 3 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                           ^~~~~~~~~~~~~~
+      |                                           |
+      |                                           int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:61: note: expected ‘eGenero *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                    ~~~~~~~~~^~~~~~
+../src/Albumes.c:453:60: warning: passing argument 4 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                                            ^~~~~~~~~~
+      |                                                            |
+      |                                                            int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:84: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:453:8: error: too few arguments to function ‘altaSimplificada’
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:506:29: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  506 |    if(alta(album, tamAlbum, auxLugarLibre, genero, tipoArtista, artista) == 1)
+      |                             ^~~~~~~~~~~~~
+      |                             |
+      |                             int *
+../src/Albumes.c:51:45: note: expected ‘int’ but argument is of type ‘int *’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |                                         ~~~~^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:43:15 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:453:43: warning: passing argument 3 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                           ^~~~~~~~~~~~~~
+      |                                           |
+      |                                           int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:61: note: expected ‘eGenero *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                    ~~~~~~~~~^~~~~~
+../src/Albumes.c:453:60: warning: passing argument 4 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                                            ^~~~~~~~~~
+      |                                                            |
+      |                                                            int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:84: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:453:8: error: too few arguments to function ‘altaSimplificada’
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:506:29: warning: passing argument 3 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  506 |    if(alta(album, tamAlbum, &auxLugarLibre, genero, tipoArtista, artista) == 1)
+      |                             ^~~~~~~~~~~~~~
+      |                             |
+      |                             int **
+../src/Albumes.c:51:45: note: expected ‘int’ but argument is of type ‘int **’
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero , eTipoArtista* TipoArtista , eArtista* artista )
+      |                                         ~~~~^~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:43:23 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:453:43: warning: passing argument 3 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                           ^~~~~~~~~~~~~~
+      |                                           |
+      |                                           int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:61: note: expected ‘eGenero *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                    ~~~~~~~~~^~~~~~
+../src/Albumes.c:453:60: warning: passing argument 4 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                                            ^~~~~~~~~~
+      |                                                            |
+      |                                                            int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:84: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:453:8: error: too few arguments to function ‘altaSimplificada’
+  453 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:44:21 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:455:43: warning: passing argument 3 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  455 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                           ^~~~~~~~~~~~~~
+      |                                           |
+      |                                           int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:61: note: expected ‘eGenero *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                    ~~~~~~~~~^~~~~~
+../src/Albumes.c:455:60: warning: passing argument 4 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  455 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |                                                            ^~~~~~~~~~
+      |                                                            |
+      |                                                            int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:84: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:455:8: error: too few arguments to function ‘altaSimplificada’
+  455 |     if(altaSimplificada(eAlbum, tamAlbum, &auxLugarLibre , &auxindice ) == 1)
+      |        ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:45:25 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+Finished building: ../src/Listar.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:27:2: error: too few arguments to function ‘menu’
+   27 |  menu(album , CANTIDAD);
+      |  ^~~~
+In file included from ../src/Parcial_1_Laboratorio.c:17:
+../src/Albumes.h:79:6: note: declared here
+   79 | void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista );
+      |      ^~~~
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:48:03 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:51:42 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘alta’:
+../src/Albumes.c:157:4: warning: statement with no effect [-Wunused-value]
+  157 |    TipoArtista
+      |    ^~~~~~~~~~~
+../src/Albumes.c:157:15: error: expected ‘;’ before ‘auxAlbum’
+  157 |    TipoArtista
+      |               ^
+      |               ;
+  158 |    auxAlbum.isEmpty = OCUPADO;
+      |    ~~~~~~~~    
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+20:51:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:53:36 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+20:58:54 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘altaSimplificada’:
+../src/Albumes.c:512:53: warning: passing argument 5 of ‘alta’ makes integer from pointer without a cast [-Wint-conversion]
+  512 |    if(alta(album, tamAlbum, *auxLugarLibre, genero, tipoArtista, artista) == 1)
+      |                                                     ^~~~~~~~~~~
+      |                                                     |
+      |                                                     eTipoArtista * {aka struct <anonymous> *}
+../src/Albumes.c:51:78: note: expected ‘int’ but argument is of type ‘eTipoArtista *’ {aka ‘struct <anonymous> *’}
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero ,int tamGenero,  eTipoArtista* TipoArtista ,int tamTipoArtista, eArtista* Artista ,int tamArtista)
+      |                                                                          ~~~~^~~~~~~~~
+../src/Albumes.c:512:66: warning: passing argument 6 of ‘alta’ from incompatible pointer type [-Wincompatible-pointer-types]
+  512 |    if(alta(album, tamAlbum, *auxLugarLibre, genero, tipoArtista, artista) == 1)
+      |                                                                  ^~~~~~~
+      |                                                                  |
+      |                                                                  eArtista * {aka struct <anonymous> *}
+../src/Albumes.c:51:104: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘eArtista *’ {aka ‘struct <anonymous> *’}
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero ,int tamGenero,  eTipoArtista* TipoArtista ,int tamTipoArtista, eArtista* Artista ,int tamArtista)
+      |                                                                                          ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:512:7: error: too few arguments to function ‘alta’
+  512 |    if(alta(album, tamAlbum, *auxLugarLibre, genero, tipoArtista, artista) == 1)
+      |       ^~~~
+../src/Albumes.c:51:5: note: declared here
+   51 | int alta(eAlbum* Album , int tamAlbum , int lugarLibre, eGenero* Genero ,int tamGenero,  eTipoArtista* TipoArtista ,int tamTipoArtista, eArtista* Artista ,int tamArtista)
+      |     ^~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:01:02 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c:503:5: error: conflicting types for ‘altaSimplificada’
+  503 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice )
+      |     ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: previous declaration of ‘altaSimplificada’ was here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , eTipoArtista* tipoArtista , eArtista* artista ,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:01:20 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:459:52: warning: passing argument 4 of ‘altaSimplificada’ makes integer from pointer without a cast [-Wint-conversion]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                    ^~~~~~~~~~~
+      |                                                    |
+      |                                                    eTipoArtista * {aka struct <anonymous> *}
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:74: note: expected ‘int’ but argument is of type ‘eTipoArtista *’ {aka ‘struct <anonymous> *’}
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~^~~~~~~~~
+../src/Albumes.c:459:65: warning: passing argument 5 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                                 ^~~~~~~
+      |                                                                 |
+      |                                                                 eArtista * {aka struct <anonymous> *}
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:99: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘eArtista *’ {aka ‘struct <anonymous> *’}
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                                     ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:459:74: warning: passing argument 6 of ‘altaSimplificada’ makes integer from pointer without a cast [-Wint-conversion]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                                          ^~~~~~~~~~~~~~
+      |                                                                          |
+      |                                                                          int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:117: note: expected ‘int’ but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                                                                 ~~~~^~~~~~~~~~~~~~
+../src/Albumes.c:459:90: warning: passing argument 7 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                                                          ^~~~~~~~~~
+      |                                                                                          |
+      |                                                                                          int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:143: note: expected ‘eArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                                                                                     ~~~~~~~~~~^~~~~~~
+../src/Albumes.c:459:9: error: too few arguments to function ‘altaSimplificada’
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |         ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:82:5: note: declared here
+   82 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:02:19 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:459:52: warning: passing argument 4 of ‘altaSimplificada’ makes integer from pointer without a cast [-Wint-conversion]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                    ^~~~~~~~~~~
+      |                                                    |
+      |                                                    eTipoArtista * {aka struct <anonymous> *}
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:83:74: note: expected ‘int’ but argument is of type ‘eTipoArtista *’ {aka ‘struct <anonymous> *’}
+   83 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                      ~~~~^~~~~~~~~
+../src/Albumes.c:459:65: warning: passing argument 5 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                                 ^~~~~~~
+      |                                                                 |
+      |                                                                 eArtista * {aka struct <anonymous> *}
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:83:99: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘eArtista *’ {aka ‘struct <anonymous> *’}
+   83 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                                     ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Albumes.c:459:74: warning: passing argument 6 of ‘altaSimplificada’ makes integer from pointer without a cast [-Wint-conversion]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                                          ^~~~~~~~~~~~~~
+      |                                                                          |
+      |                                                                          int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:83:117: note: expected ‘int’ but argument is of type ‘int *’
+   83 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                                                                 ~~~~^~~~~~~~~~~~~~
+../src/Albumes.c:459:90: warning: passing argument 7 of ‘altaSimplificada’ from incompatible pointer type [-Wincompatible-pointer-types]
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |                                                                                          ^~~~~~~~~~
+      |                                                                                          |
+      |                                                                                          int *
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:83:143: note: expected ‘eArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘int *’
+   83 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |                                                                                                                                     ~~~~~~~~~~^~~~~~~
+../src/Albumes.c:459:9: error: too few arguments to function ‘altaSimplificada’
+  459 |     if( altaSimplificada(eAlbum, tamAlbum, genero, tipoArtista, artista, &auxLugarLibre, &auxindice) == 1)
+      |         ^~~~~~~~~~~~~~~~
+In file included from ../src/Albumes.c:8:
+../src/Albumes.h:83:5: note: declared here
+   83 | int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista,int* auxLugarLibre , int *auxIndice );
+      |     ^~~~~~~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:03:06 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+Finished building: ../src/Listar.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+../src/Parcial_1_Laboratorio.c: In function ‘main’:
+../src/Parcial_1_Laboratorio.c:30:32: warning: passing argument 4 of ‘menu’ makes integer from pointer without a cast [-Wint-conversion]
+   30 |  menu(album, CANTIDAD, genero, tipoArtista, artista);
+      |                                ^~~~~~~~~~~
+      |                                |
+      |                                eTipoArtista * {aka struct <anonymous> *}
+In file included from ../src/Parcial_1_Laboratorio.c:17:
+../src/Albumes.h:79:65: note: expected ‘int’ but argument is of type ‘eTipoArtista *’ {aka ‘struct <anonymous> *’}
+   79 | void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , int tamGenero , eTipoArtista* tipoArtista , int tamTipoArtista , eArtista* artista, int tamArtista );
+      |                                                             ~~~~^~~~~~~~~
+../src/Parcial_1_Laboratorio.c:30:45: warning: passing argument 5 of ‘menu’ from incompatible pointer type [-Wincompatible-pointer-types]
+   30 |  menu(album, CANTIDAD, genero, tipoArtista, artista);
+      |                                             ^~~~~~~
+      |                                             |
+      |                                             eArtista * {aka struct <anonymous> *}
+In file included from ../src/Parcial_1_Laboratorio.c:17:
+../src/Albumes.h:79:91: note: expected ‘eTipoArtista *’ {aka ‘struct <anonymous> *’} but argument is of type ‘eArtista *’ {aka ‘struct <anonymous> *’}
+   79 | void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , int tamGenero , eTipoArtista* tipoArtista , int tamTipoArtista , eArtista* artista, int tamArtista );
+      |                                                                             ~~~~~~~~~~~~~~^~~~~~~~~~~
+../src/Parcial_1_Laboratorio.c:30:2: error: too few arguments to function ‘menu’
+   30 |  menu(album, CANTIDAD, genero, tipoArtista, artista);
+      |  ^~~~
+In file included from ../src/Parcial_1_Laboratorio.c:17:
+../src/Albumes.h:79:6: note: declared here
+   79 | void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , int tamGenero , eTipoArtista* tipoArtista , int tamTipoArtista , eArtista* artista, int tamArtista );
+      |      ^~~~
+make: *** [src/subdir.mk:29: src/Parcial_1_Laboratorio.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:03:35 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:04:51 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:11:40 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+../src/Albumes.c: In function ‘menu’:
+../src/Albumes.c:450:2: error: too few arguments to function ‘altaForzada’
+  450 |  altaForzada(eAlbum, tamAlbum, 0, "Miguel", 10, 12, 2001, 200);
+      |  ^~~~~~~~~~~
+../src/Albumes.c:313:6: note: declared here
+  313 | void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe ,
+      |      ^~~~~~~~~~~
+../src/Albumes.c:451:2: error: too few arguments to function ‘altaForzada’
+  451 |  altaForzada(eAlbum, tamAlbum, 1, "Alexis", 8, 6, 2001, 1200);
+      |  ^~~~~~~~~~~
+../src/Albumes.c:313:6: note: declared here
+  313 | void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe ,
+      |      ^~~~~~~~~~~
+../src/Albumes.c:452:2: error: too few arguments to function ‘altaForzada’
+  452 |  altaForzada(eAlbum, tamAlbum, 2, "Oscar", 4, 4, 1999, 3200);
+      |  ^~~~~~~~~~~
+../src/Albumes.c:313:6: note: declared here
+  313 | void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe ,
+      |      ^~~~~~~~~~~
+../src/Albumes.c:453:2: error: too few arguments to function ‘altaForzada’
+  453 |  altaForzada(eAlbum, tamAlbum, 3, "Abel", 22, 3, 1996, 6200);
+      |  ^~~~~~~~~~~
+../src/Albumes.c:313:6: note: declared here
+  313 | void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe ,
+      |      ^~~~~~~~~~~
+../src/Albumes.c:454:2: error: too few arguments to function ‘altaForzada’
+  454 |  altaForzada(eAlbum, tamAlbum, 4, "Adrian", 18, 11, 1996, 5200);
+      |  ^~~~~~~~~~~
+../src/Albumes.c:313:6: note: declared here
+  313 | void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia , int mes , int anio , int importe ,
+      |      ^~~~~~~~~~~
+make: *** [src/subdir.mk:29: src/Albumes.o] Error 1
+"make all" terminated with exit code 2. Build might be incomplete.
+21:14:56 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building file: ../src/Listar.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Listar.d" -MT"src/Listar.o" -o "src/Listar.o" "../src/Listar.c"
+Finished building: ../src/Listar.c
+ 
+Building file: ../src/Parcial_1_Laboratorio.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Parcial_1_Laboratorio.d" -MT"src/Parcial_1_Laboratorio.o" -o "src/Parcial_1_Laboratorio.o" "../src/Parcial_1_Laboratorio.c"
+Finished building: ../src/Parcial_1_Laboratorio.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 
+21:15:27 **** Incremental Build of configuration Debug for project Parcial_1_Laboratorio ****
+make all 
+Building file: ../src/Albumes.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/Albumes.d" -MT"src/Albumes.o" -o "src/Albumes.o" "../src/Albumes.c"
+Finished building: ../src/Albumes.c
+ 
+Building target: Parcial_1_Laboratorio
+Invoking: GCC C Linker
+gcc  -o "Parcial_1_Laboratorio"  ./src/Albumes.o ./src/Listar.o ./src/Parcial_1_Laboratorio.o ./src/utn.o   
+Finished building target: Parcial_1_Laboratorio
+ 

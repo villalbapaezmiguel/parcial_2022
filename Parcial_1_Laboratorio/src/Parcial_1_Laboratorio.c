@@ -22,9 +22,13 @@ int main(void) {
 
 	setbuf(stdout,NULL);
 	eAlbum album[CANTIDAD];
+	eGenero genero [CANTIDAD] ;
+	eTipoArtista tipoArtista [CANTIDAD];
+	eArtista artista [CANTIDAD];
 
 	inicilizar(album, CANTIDAD);
-	menu(album , CANTIDAD);
+	menu(album, CANTIDAD, genero, CANTIDAD,tipoArtista,CANTIDAD, artista, CANTIDAD);
+//	menu(album , CANTIDAD);
 
 	return EXIT_SUCCESS;
 }
