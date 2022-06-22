@@ -87,4 +87,14 @@ int altaSimplificada(eAlbum* album , int tamAlbum ,eGenero* genero , int tamGene
 int modificacionSimplificada(eAlbum* album , int tamAlbum , int* auxCodigoBuscado  );
 int bajaSimplificada (eAlbum* album , int tamAlbum , int* auxCodigoBaja );
 
+
+//listar
+void subMenuListar(eAlbum* eAlbum, int tamAlbum,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista);
+
+int ListarGeneros(eAlbum* listaAlbum, int tamListaAlbum, eGenero* listaGenero );
+int ListarTiposArtistas(eAlbum* listaAlbum, int tamListaAlbum, eTipoArtista* listaTiposArtista );
+int ListarTodosLosArtistas(eAlbum* listaAlbum, int tamListaAlbum, eArtista* listaArtistas );
+int ListarTodosLosAlbumes(eAlbum* listaAlbum, int tamListaAlbum);
+int ListarTodosLosAlbumesFechaPublicacion(eAlbum* listaAlbum, int tamListaAlbum);
+int	listarAlbumesSuperanPromedioImportes(eAlbum* album , int tamAlbum );
 #endif /* ALBUMES_H_ */

@@ -316,7 +316,9 @@ void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia ,
 		eArtista* artista , int tamArtista , int codigoArtista , char* nombreArtista )
 {
 	eAlbum auxAlbum ;
-
+	eGenero auxGenero ;
+	eTipoArtista auxTipoArtista ;
+	eArtista auxArtista ;
 
 	auxAlbum = album[id];
 
@@ -329,11 +331,26 @@ void altaForzada(eAlbum* album , int tamAlbum , int id, char* titulo , int dia ,
 	auxAlbum.isEmpty = OCUPADO;
 	album[id] = auxAlbum ;
 	//cargar los datos de genero , tipo artista y artista
+	//genero
+	auxGenero.codigoGenero = codigoGenero ;
+	strncpy(auxGenero.descripcion, descripcionGenero, sizeof(auxGenero.descripcion));
+	genero[id] = auxGenero;
+
+	//tipo artista
+	auxTipoArtista.tipoArtista = tiposDeArtistas;
+	auxTipoArtista.codigoArtista = codigoTipoArtista;
+	strncpy(auxTipoArtista.descripcion, descripcionTipoArtista, sizeof(auxTipoArtista.descripcion));
+	tipoArtista[id] = auxTipoArtista;
+
+	//artista
+	auxArtista.codigoArtista = codigoArtista;
+	strncpy(auxArtista.nombreArtista, nombreArtista, sizeof(auxArtista.nombreArtista));
+	artista[id] = auxArtista;
 
 }
 
-//INFORMAR
-int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportes , int* cantidadMayorPromedio)
+//INFORMAR---------------------------------------------------------------------------------------------------------------
+int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , float* promedioImportesTotal , int* cantidadMayorPromedio)
 {
 	int estado = -1;
 	int i, j;
@@ -354,14 +371,14 @@ int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , fl
 				}
 			}
 		}
-		*promedioImportes = acumulador /contador;
+		*promedioImportesTotal = acumulador /contador;
 		*total = acumulador ;
 
 		for (j = 0; j < tamAlbum; ++j) {
 
 			if(album[j].isEmpty == OCUPADO)
 			{
-				if(*promedioImportes < album[j].importe )
+				if(*promedioImportesTotal < album[j].importe )
 				{
 					contadorMayorPromedios++;
 				}
@@ -369,7 +386,7 @@ int	calcularTotalPromedioCantidad(eAlbum* album , int tamAlbum , int* total , fl
 		}
 		*cantidadMayorPromedio = contadorMayorPromedios;
 
-		if((*cantidadMayorPromedio > 0) && (*promedioImportes > 0) && (*total > 0))
+		if((*cantidadMayorPromedio > 0) && (*promedioImportesTotal > 0) && (*total > 0))
 		{
 			estado = 1;
 		}
@@ -447,12 +464,12 @@ void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , int tamGenero , eTip
 	int auxindice ;
 	int auxCodigoBuscado;
 	int auxCodigoBaja;
-
-	altaForzada(eAlbum, tamAlbum, 0, "Miguel", 10, 12, 2001, 200 , genero , tamGenero , 0 , "codigoArista", tipoArtista , tamTipoArtista , 1 , 0 , "descripcion tipos artista", artista , tamArtista, 0 , "SoyElNombreDelArtista" );
-//	altaForzada(eAlbum, tamAlbum, 1, "Alexis", 8, 6, 2001, 1200);
-//	altaForzada(eAlbum, tamAlbum, 2, "Oscar", 4, 4, 1999, 3200);
-//	altaForzada(eAlbum, tamAlbum, 3, "Abel", 22, 3, 1996, 6200);
-//	altaForzada(eAlbum, tamAlbum, 4, "Adrian", 18, 11, 1996, 5200);
+//1 solista // banda
+	altaForzada(eAlbum, tamAlbum, 0, "Miguel", 10, 12, 2001, 200 , genero , tamGenero , 0 , "Jazz.", tipoArtista , tamTipoArtista , 1 , 0 , "fue un trompetista y compositor estadounidense de jazz", artista , tamArtista, 0 , "Miles Davis" );
+	altaForzada(eAlbum, tamAlbum, 1, "Alexis", 8, 6, 2001, 1200 , genero , tamGenero , 1 , "Rock and Roll", tipoArtista , tamTipoArtista , 2 , 1 , " fue un cantante y compositor estadounidense", artista , tamArtista, 1, "Elvis Presley");
+	altaForzada(eAlbum, tamAlbum, 2, "Oscar", 4, 4, 1999, 3200 , genero , tamGenero , 2 , "Soul", tipoArtista , tamTipoArtista , 2 , 2 , " fue un cantante de soul y funk estadounidense", artista , tamArtista, 2 , "James Brown");
+	altaForzada(eAlbum, tamAlbum, 3, "Abel", 22, 3, 1996, 6200 , genero , tamGenero , 3 , "Heavy Metal.", tipoArtista , tamTipoArtista , 2 , 3 , "Iron Maiden es una banda británica de heavy metal de Leyton en el East End de Londres", artista , tamArtista, 3 , "Iron Maiden");
+	altaForzada(eAlbum, tamAlbum, 4, "Adrian", 18, 11, 1996, 5200 , genero , tamGenero , 4 , "Techno", tipoArtista , tamTipoArtista , 1 , 4 , "es un DJ, músico y productor británico, naturalizado canadiense. ", artista , tamArtista, 4 , "Richie Hawtin");
 	do {
 		printf("\n1) ALTA \n2) MODIFICACION \n3) BAJA \n4) INFORMAR \n5) LISTAR \n6)SALIR");
 		printf("\nIngrese algo : ");
@@ -493,8 +510,9 @@ void menu( eAlbum* eAlbum , int tamAlbum ,eGenero* genero , int tamGenero , eTip
 
 				break;
 			case 5:
-				printf("\nLISTAR");
-				informarTodoAlbum(eAlbum, tamAlbum);
+				printf("\n---------------------------------LISTAR-------------------------------");
+				subMenuListar(eAlbum, tamAlbum, genero, tamGenero, tipoArtista, tamTipoArtista, artista, tamArtista);
+	//			informarTodoAlbum(eAlbum, tamAlbum);
 				break;
 			case 6 :
 				printf("\nSalio del programa");
@@ -621,4 +639,244 @@ void subMenuInformar(eAlbum* eAlbum, int tamAlbum)
 
 	} while (opcionInformar != 3);
 }
+
+//Listar--------
+void subMenuListar(eAlbum* eAlbum, int tamAlbum,eGenero* genero , int tamGenero, eTipoArtista* tipoArtista , int tamTipoArtista, eArtista* artista , int tamArtista)
+{
+	int opcionInformar;
+
+	do {
+printf(
+"\n1) Todos los generos \n"
+"2) Todos los tipos de artistas musicales\n "
+"3) Todos los artistas. \n"
+"4) Todos los álbumes.\nTítulo (ascendentemente)\n"
+"5) Realizar un solo listado de los álbumes ordenados por los siguientes criterios:\n"
+"-Importe (descendentemente)\n-Título (ascendentemente)"
+"6) Todos los álbumes cuya fecha de publicación es menor a 1/1/2000.\n"
+"7)Todos los álbumes que superan el promedio de los importes\n"
+"8)Todos los álbumes de cada artista.\n"
+"9)Todos los álbumes de un año determinado.\n"
+"10)El álbum o los álbumes más caros\n");
+
+printf("\n11) Salir de Listar");
+		utn_pedirInt(&opcionInformar, "\nIngrese una opcion :", "\nERROR", 1, 11, 2);
+		switch(opcionInformar)
+		{
+			case 1://A) Todos los generos
+				if(ListarGeneros(eAlbum, tamArtista, genero) == 0)
+				{
+					printf("\n---------------------Listar Todos los generos Finalizado----------------");
+				}
+				break;
+			case 2://B) Todos los tipos de artistas musicales.
+				if(ListarTiposArtistas(eAlbum, tamArtista, tipoArtista)== 0)
+				{
+					printf("\n---------------------Listar Todos los Tipos de Artistas Finalizado----------------");
+				}
+				break;
+			case 3://C) Todos los artistas.
+
+				if(ListarTodosLosArtistas(eAlbum, tamArtista, artista)== 0)
+				{
+					printf("\n---------------------Listar Todos los Artistas Finalizado----------------");
+				}
+
+				break;
+			case 4://D) Todos los álbumes.
+
+				if(ListarTodosLosAlbumes(eAlbum, tamArtista)==0)
+				{
+					printf("\n---------------------Listar Todos Albumes Finalizado----------------");
+				}
+
+				break;
+			case 5:
+				break;
+			case 6://F) Todos los álbumes cuya fecha de publicación es menor a 1/1/2000.//despues ingles
+
+				if(ListarTodosLosAlbumesFechaPublicacion(eAlbum, tamArtista)== 0)
+				{
+					printf("\n---------------------Listar Todos Albumes cuya fecha de publicación es menor a 1/1/2000 Finalizado----------------");
+
+				}
+				break;
+			case 7://G)Todos los álbumes que superan el promedio de los importes
+
+				if(listarAlbumesSuperanPromedioImportes(eAlbum, tamAlbum)== 0)
+				{
+					printf("\n---------------------Listar Todos los álbumes que superan el promedio de los importes Finalizado----------------");
+
+				}
+				break;
+			case 8:
+				break;
+			case 9:
+				break;
+			case 10:
+				break;
+		}
+
+
+	} while (opcionInformar != 11);
+}
+int ListarGeneros(eAlbum* listaAlbum, int tamListaAlbum, eGenero* listaGenero )
+{
+	int estado = -1;
+	int i ;
+	if(tamListaAlbum > 0 )
+	{
+		estado = 0;
+		for (i = 0; i < tamListaAlbum; ++i)
+		{
+
+			if(listaAlbum[i].isEmpty == OCUPADO)
+			{
+				printf("\n Genero : %s ", listaGenero[i].descripcion);
+
+			}
+		}
+	}
+
+	return estado ;
+}
+
+int ListarTiposArtistas(eAlbum* listaAlbum, int tamListaAlbum, eTipoArtista* listaTiposArtista )
+{
+	int estado = -1;
+	int i ;
+	if(tamListaAlbum > 0 )
+	{
+		estado = 0;
+		for (i = 0; i < tamListaAlbum; ++i)
+		{
+
+			if(listaAlbum[i].isEmpty == OCUPADO)
+			{
+
+				if(listaTiposArtista[i].tipoArtista == 1)
+				{
+					printf("\n tipo de artista :  solista");
+
+				}else {
+					printf("\n tipo de artista :  banda");
+
+				}
+			}
+		}
+	}
+
+	return estado ;
+}
+
+int ListarTodosLosArtistas(eAlbum* listaAlbum, int tamListaAlbum, eArtista* listaArtistas )
+{
+	int estado = -1;
+	int i ;
+	if(tamListaAlbum > 0 )
+	{
+		estado = 0;
+		for (i = 0; i < tamListaAlbum; ++i)
+		{
+
+			if(listaAlbum[i].isEmpty == OCUPADO)
+			{
+
+				printf("\n Artista :%s ", listaArtistas[i].nombreArtista);
+			}
+		}
+	}
+
+	return estado ;
+}
+
+
+int ListarTodosLosAlbumes(eAlbum* listaAlbum, int tamListaAlbum)
+{
+	int estado = -1;
+	int i ;
+	if(tamListaAlbum > 0 )
+	{
+		estado = 0;
+		for (i = 0; i < tamListaAlbum; ++i)
+		{
+
+			if(listaAlbum[i].isEmpty == OCUPADO)
+			{
+
+				printf("\n Albumes :%s ", listaAlbum[i].titulo);
+			}
+		}
+	}
+
+	return estado ;
+}
+int ListarTodosLosAlbumesFechaPublicacion(eAlbum* listaAlbum, int tamListaAlbum)
+{
+	int estado = -1;
+	int i ;
+	if(tamListaAlbum > 0 )
+	{
+		estado = 0;
+		for (i = 0; i < tamListaAlbum; ++i)
+		{
+
+			if(listaAlbum[i].isEmpty == OCUPADO)
+			{
+				if(listaAlbum[i].fecha.anio < 2000)
+				{
+					printf("\n Albumes :%s , fecha : %d/%d/%d", listaAlbum[i].titulo, listaAlbum[i].fecha.dia, listaAlbum[i].fecha.mes, listaAlbum[i].fecha.anio);
+
+				}
+
+			}
+		}
+	}
+
+	return estado ;
+}
+//Todos los álbumes que superan el promedio de los importes.
+int	listarAlbumesSuperanPromedioImportes(eAlbum* album , int tamAlbum )
+{
+	int estado = -1;
+	int i, j;
+	int contadorImporte = 0;
+	int acumuladorImporte = 0;
+
+	float promedioImportesTotal;
+
+	if(album != NULL && tamAlbum > 0)
+	{
+		estado = 0;
+		for (i = 0; i < tamAlbum; ++i) {
+
+			if(album[i].isEmpty == OCUPADO)
+			{
+				if(album[i].importe > 0 )
+				{
+					contadorImporte++;
+					acumuladorImporte += album[i].importe;
+				}
+			}
+		}
+		promedioImportesTotal = acumuladorImporte /contadorImporte;
+
+		printf("\nPromedio de los importes Totales : %.2f", promedioImportesTotal);
+		for (j = 0; j < tamAlbum; ++j) {
+
+			if(album[j].isEmpty == OCUPADO)
+			{
+				if(promedioImportesTotal < album[j].importe )
+				{
+					printf("\nAlbum : %s || importe : %d ", album[j].titulo, album[j].importe);
+
+				}
+			}
+		}
+
+	}
+
+	return estado;
+}
+
 

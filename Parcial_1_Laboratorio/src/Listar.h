@@ -7,6 +7,7 @@
 
 #ifndef LISTAR_H_
 #define LISTAR_H_
+
 #include <stdio_ext.h>
 #include <stdlib.h>
 #include <string.h>
@@ -15,7 +16,6 @@
 #include "utn.h"
 #include "Albumes.h"
 
-
-
+//int ListarGeneros(eAlbum* listaAlbum, int tamListaAlbum, eGenero* listaGenero );
 
 #endif /* LISTAR_H_ */

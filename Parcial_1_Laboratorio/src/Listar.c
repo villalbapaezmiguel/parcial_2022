@@ -8,23 +8,22 @@
 
 #include "Listar.h"
 
-int ListarGeneros(eAlbum* listaAlbum, int tamListaAlbum, eGenero listaGenero )
-{
-	int estado = -1;
-	int i ;
-	if(tamListaAlbum > 0 )
-	{
-		for (i = 0; i < tamListaAlbum; ++i)
-		{
-
-			if(listaAlbum[i].isEmpty == OCUPADO)
-			{
-
-
-
-			}
-		}
-	}
-
-	return estado ;
-}
+//int ListarGeneros(eAlbum* listaAlbum, int tamListaAlbum, eGenero* listaGenero )
+//{
+//	int estado = -1;
+//	int i ;
+//	if(tamListaAlbum > 0 )
+//	{
+//		for (i = 0; i < tamListaAlbum; ++i)
+//		{
+//
+//			if(listaAlbum[i].isEmpty == OCUPADO)
+//			{
+//				printf("\n Genero : %s ", listaGenero[i].descripcion);
+//
+//			}
+//		}
+//	}
+//
+//	return estado ;
+//}
